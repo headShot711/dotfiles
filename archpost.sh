@@ -23,7 +23,7 @@ sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm --needed xorg  
 sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed lxappearance
-udo pacman -S --noconfirm --needed nitrogen
+sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed picom
 sudo pacman -S --noconfirm --needed i3-gaps
 sudo pacman -S --noconfirm --needed i3status
