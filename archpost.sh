@@ -7,7 +7,9 @@
 #######################################################
 
 # git clone https://github.com/headShot711/dotfiles
+# cd dotfiles
 # sh install.sh
+# enter password if prompted
 
 # Make directories
 cd
