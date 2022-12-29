@@ -2,6 +2,7 @@
 cd
 mkdir -v walls
 mkdir -v ~/.config
+mkdir -v ~/.config/i3
 mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/polybar
 
