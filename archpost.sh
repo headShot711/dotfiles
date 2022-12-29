@@ -1,9 +1,7 @@
 #######################################################
 # Post install script for arch base
-# Author: headShot711@protonmail.com
-# Prerequisite packages: nano git
-# Enable parallel downloads in /etc/pacman.conf
-# Include only fast mirrors in /etc/pacman.d/mirrorlist
+# Author: headShot
+# Prerequisite packages: git
 #######################################################
 
 # git clone https://github.com/headShot711/dotfiles
