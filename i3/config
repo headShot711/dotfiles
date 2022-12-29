@@ -43,12 +43,14 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec_always feh --bg-fill ~/walls/wall.jpg
 exec --no-startup-id picom -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
+exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
 # Set screen resolution
