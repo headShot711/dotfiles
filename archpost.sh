@@ -106,18 +106,11 @@ sudo cp -rv ~/dotfiles/i3/* ~/.config/i3/
 sudo cp -rv ~/dotfiles/alacritty/* ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/polybar/* ~/.config/polybar/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
-chmod +x ~/.config/polybar/launch.sh
+sudo chmod +x ~/.config/polybar/launch.sh
 
 # Enable services
 sudo systemctl enable bluetooth.service
 sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
-
-# Turn off beep sound
-sudo -i
-rmmod pcspkr
-touch /etc/modprobe.d/nobeep.conf
-echo blacklist pcspkr > /etc/modprobe.d/nobeep.conf
-exit
 
 echo "Installation completed. Reboot system"
