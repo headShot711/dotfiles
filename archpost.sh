@@ -20,8 +20,9 @@ mkdir -v ~/.config/polybar
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed xorg    
+_sudo pacman -S --noconfirm --needed xorg    
 sudo pacman -S --noconfirm --needed lxappearance
+udo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed picom
 sudo pacman -S --noconfirm --needed i3-gaps
 sudo pacman -S --noconfirm --needed i3status
@@ -109,5 +110,7 @@ sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
 
 # Turn off beep sound
-sudo rmmod pcspkr
-sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
+sudo -i
+rmmod pcspkr
+touch /etc/modprobe.d/nobeep.conf
+echo blacklist pcspkr > /etc/modprobe.d/nobeep.conf
