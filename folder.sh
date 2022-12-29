@@ -1,4 +1,5 @@
 # Make directories
+cd
 mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/alacritty
