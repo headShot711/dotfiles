@@ -114,3 +114,6 @@ sudo -i
 rmmod pcspkr
 touch /etc/modprobe.d/nobeep.conf
 echo blacklist pcspkr > /etc/modprobe.d/nobeep.conf
+exit
+
+echo "Installation completed. Reboot system"
