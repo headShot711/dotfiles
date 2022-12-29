@@ -20,7 +20,8 @@ mkdir -v ~/.config/polybar
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-_sudo pacman -S --noconfirm --needed xorg    
+sudo pacman -S --noconfirm --needed xorg  
+sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed lxappearance
 udo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed picom
@@ -86,18 +87,19 @@ sudo pacman -S --noconfirm --needed nomacs
 
 # Install yay
 
+cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
 # Install yay packages
 cd
-yay
 yay -S --noconfirm pfetch
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
 
 # Copy config files
+cd
 sudo cp -rv ~/dotfiles/i3/* ~/.config/i3/
 sudo cp -rv ~/dotfiles/alacritty/* ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/polybar/* ~/.config/polybar/
