@@ -10,6 +10,7 @@
 # sh install.sh
 
 # Make directories
+cd
 mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/i3
