@@ -21,6 +21,7 @@ sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm --needed mtools
 sudo pacman -S --noconfirm --needed dosfstools
+sudo pacman -S --noconfirm --needed exfat-utils
 sudo pacman -S --noconfirm --needed linux-headers
 sudo pacman -S --noconfirm --needed gvfs
 sudo pacman -S --noconfirm --needed ntfs-3g
