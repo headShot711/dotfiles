@@ -57,7 +57,7 @@ sudo pacman -S --noconfirm --needed pulseaudio
 sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
 sudo pacman -S --noconfirm --needed alsa-utils
 sudo pacman -S --noconfirm --needed pavucontrol
-sudo pacman -S --noconfirm --needed cmus
+sudo pacman -S --noconfirm --needed mocp
 sudo pacman -S --noconfirm --needed zathura  
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed leafpad  
