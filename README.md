@@ -10,7 +10,7 @@ sudo pacman -S git
 
 2) Git clone the repo
 
-git clone https://headShot711/dotfiles.git
+git clone https://github.com/headShot711/dotfiles.git
 
 3) Run the script
 
