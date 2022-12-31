@@ -1,14 +1,3 @@
-#######################################################
-# Post install script for arch base
-# Author: headShot
-# Prerequisite packages: git
-#######################################################
-
-# git clone https://github.com/headShot711/dotfiles
-# cd dotfiles
-# sh install.sh
-# enter password if prompted
-
 # Make directories
 cd
 mkdir -v walls
