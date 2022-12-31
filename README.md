@@ -1,6 +1,5 @@
-#################################
 # Post Arch Installation script #
-#################################
+
 The script will install i3 window manager on a base arch linux with necessary packages, with my configuration files in place.
 
 # Steps:
