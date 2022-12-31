@@ -14,5 +14,6 @@ git clone https://headShot711/dotfiles.git
 
 3) Run the script
 
-cd dotfiles \n
+cd dotfiles
+
 sh install.sh
