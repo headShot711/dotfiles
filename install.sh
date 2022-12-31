@@ -37,6 +37,7 @@ sudo pacman -S --noconfirm --needed gvfs
 sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed neofetch
+sudo pacman -S --noconfirm --needed yt-dlp
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed dunst
@@ -61,6 +62,7 @@ sudo pacman -S --noconfirm --needed zathura
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed leafpad  
 sudo pacman -S --noconfirm --needed ttf-liberation
+sudo pacman -S --noconfirm --needed ttf-font-awesome
 sudo pacman -S --noconfirm --needed scrot
 sudo pacman -S --noconfirm --needed mpv 
 sudo pacman -S --noconfirm --needed thunar 
