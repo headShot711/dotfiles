@@ -27,6 +27,7 @@ sudo pacman -S --noconfirm --needed gvfs
 sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed neofetch
+sudo pacman -S --noconfirm --needed lm_sensors
 sudo pacman -S --noconfirm --needed yt-dlp
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed polybar
