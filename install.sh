@@ -77,6 +77,9 @@ sudo pacman -S --noconfirm --needed ebtables
 sudo pacman -S --noconfirm --needed bridge-utils
 sudo pacman -S --noconfirm --needed openbsd-netcat
 sudo pacman -S --noconfirm --needed nomacs
+sudo pacman -S --noconfirm --needed keepasxc
+sudo pacman -S --noconfirm --needed gimp
+sudo pacman -S --noconfirm --needed blender
 
 # Install yay
 
