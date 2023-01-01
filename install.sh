@@ -6,6 +6,9 @@ mkdir -v ~/.config/i3
 mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/polybar
 
+#Add parallel downloading
+sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
