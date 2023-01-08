@@ -107,6 +107,7 @@ sudo ln -s /var/lib/snapd/snap /snap
 
 # Install snap packages
 sudo snap install gridplayer
+sudo snap install riseup-vpn --classic
 
 # Copy config files
 cd
