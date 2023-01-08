@@ -97,6 +97,17 @@ yay -S --noconfirm pfetch
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
 
+# Install snap
+cd
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+
+# Install snap packages
+sudo snap install gridplayer
+
 # Copy config files
 cd
 sudo cp -rv ~/dotfiles/i3/* ~/.config/i3/
