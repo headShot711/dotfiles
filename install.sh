@@ -27,6 +27,7 @@ sudo pacman -S --noconfirm --needed dosfstools
 sudo pacman -S --noconfirm --needed exfat-utils
 sudo pacman -S --noconfirm --needed linux-headers
 sudo pacman -S --noconfirm --needed gvfs
+sudo pacman -S --noconfirm --needed gvfs-mtp
 sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed neofetch
