@@ -74,8 +74,8 @@ sudo apt install -y lightdm lightdm-gtk-greeter-settings
 sudo systemctl enable lightdm
 
 # Copy config files
-cd
-sudo cp ~/bin/pulseaudio-control.bash /bin/
+cd ~Downloads
+git clone https://github.com/headShot711/dotfiles
 \cp -r ~/Downloads/dotfiles/.config/dunst/ ~/.config/
 \cp -r ~/Downloads/dotfiles/.config/i3/ ~/.config/
 \cp -r ~/Downloads/dotfiles/.config/picom/ ~/.config/
