@@ -97,6 +97,8 @@ cd
 yay -S --noconfirm pfetch
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
+yay -S --noconfirm brave-bin
+
 
 # Install snap
 #cd
