@@ -75,10 +75,13 @@ sudo systemctl enable lightdm
 
 # Copy config files
 cd
-sudo cp -rv ~/dotfiles/i3/* ~/.config/i3/
-sudo cp -rv ~/dotfiles/polybar/* ~/.config/polybar/
-sudo cp -rv ~/dotfiles/walls/* ~/walls/
-sudo chmod +x ~/.config/polybar/launch.sh
+sudo cp ~/bin/pulseaudio-control.bash /bin/
+\cp -r ~/Downloads/dotfiles/.config/dunst/ ~/.config/
+\cp -r ~/Downloads/dotfiles/.config/i3/ ~/.config/
+\cp -r ~/Downloads/dotfiles/.config/picom/ ~/.config/
+\cp -r ~/Downloads/dotfiles/.config/polybar/ ~/.config/
+\cp -r ~/Downloads/dotfiles/.config/sxhkd/ ~/.config/
+\cp -r ~/Downloads/dotfiles/.config/rofi/ ~/.config/
 
 sudo apt autoremove
 
