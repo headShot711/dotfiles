@@ -73,22 +73,12 @@ sudo apt install -y vim neofetch htop mpv vlc qimgv galculator redshift cpu-x
 sudo apt install -y lightdm lightdm-gtk-greeter-settings
 sudo systemctl enable lightdm
 
-#######################################################
-## Config files copy to location
-cd ~/Downloads
-git clone https://github.com/drewgrif/dotfiles
-
-\cp -r ~/Downloads/dotfiles/bin/ ~
-chmod +x ~/bin/*
-sudo cp ~/bin/pulseaudio-control.bash /bin/
-\cp -r ~/Downloads/dotfiles/.config/backgrounds/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/dunst/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/i3/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/picom/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/polybar/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/sxhkd/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/rofi/ ~/.config/
-#######################################################
+# Copy config files
+cd
+sudo cp -rv ~/dotfiles/i3/* ~/.config/i3/
+sudo cp -rv ~/dotfiles/polybar/* ~/.config/polybar/
+sudo cp -rv ~/dotfiles/walls/* ~/walls/
+sudo chmod +x ~/.config/polybar/launch.sh
 
 sudo apt autoremove
 
