@@ -129,3 +129,4 @@ rmmod pcspkr
 echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
 
 echo "Installation completed. Reboot system"
+printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
