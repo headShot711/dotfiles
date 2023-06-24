@@ -87,8 +87,6 @@ sudo pacman -S --noconfirm --needed blender
 
 # Install XFCE
 sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
-sudo pacman -S --noconfirm --needed gdm
-sudo systemctl enable gdm
 
 # Install yay
 
@@ -101,7 +99,7 @@ makepkg -si
 cd
 yay -S --noconfirm pfetch
 yay -S --noconfirm autotiling
-#yay -S --noconfirm ly
+yay -S --noconfirm ly
 yay -S --noconfirm brave-bin
 
 
@@ -128,7 +126,7 @@ sudo chmod +x ~/.config/polybar/launch.sh
 # Enable services
 sudo systemctl enable bluetooth.service
 sudo systemctl enable libvirtd.service
-#sudo systemctl enable ly.service
+sudo systemctl enable ly.service
 
 # Most important command! Get rid of the beep!
 sudo -i
