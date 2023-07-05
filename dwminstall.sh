@@ -40,7 +40,6 @@ sudo pacman -S --noconfirm --needed network-manager-applet
 sudo pacman -S --noconfirm --needed dhcpcd
 sudo pacman -S --noconfirm --needed wpa_supplicant
 sudo pacman -S --noconfirm --needed xdg-utils
-sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
 
