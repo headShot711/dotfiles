@@ -12,8 +12,6 @@ sudo make clean install
 cd
 cd st
 sudo make clean install
-cd
-cp /etc/X11/xinitrc ~/.xinitrc
 
 # Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
@@ -58,6 +56,9 @@ sudo pacman -S --noconfirm --needed xdg-utils
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
+
+cd
+cp /etc/X11/xinitrc ~/.xinitrc
 
 cd
 git clone https://github.com/torrinfail/dwmblocks.git
