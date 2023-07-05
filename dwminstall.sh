@@ -1,18 +1,5 @@
 #!/bin/sh
 
-mkdir -p .local/src
-git clone https://github.com/bugswriter/dwm.git
-git clone https://github.com/bugswriter/dmenu.git
-git clone https://github.com/bugswriter/st.git
-cd dwm
-sudo make clean install
-cd
-cd dmenu
-sudo make clean install
-cd
-cd st
-sudo make clean install
-
 # Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
@@ -56,6 +43,19 @@ sudo pacman -S --noconfirm --needed xdg-utils
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
+
+mkdir -p .local/src
+git clone https://github.com/bugswriter/dwm.git
+git clone https://github.com/bugswriter/dmenu.git
+git clone https://github.com/bugswriter/st.git
+cd dwm
+sudo make clean install
+cd
+cd dmenu
+sudo make clean install
+cd
+cd st
+sudo make clean install
 
 cd
 cp /etc/X11/xinitrc ~/.xinitrc
