@@ -19,6 +19,7 @@ cp /etc/X11/xinitrc ~/.xinitrc
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
 sudo pacman -Syyu --noconfirm
+sudo pacman -S --noconfirm --needed xorg  
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed libxft
 sudo pacman -S --noconfirm --needed libxinerama
