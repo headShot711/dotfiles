@@ -92,7 +92,7 @@ echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
 
 # add to xinitrc
 
-echo "xcompmgr &" >> .xinitrc
-echo "exec dwm" >> .xinitrc
-echo "dwmblocks &" >> .xinitrc
-echo "/home/hs/.local/bin/newlook &" >> .xinitrc
+echo "xcompmgr &" >> ~/.xinitrc
+echo "exec dwm" >> ~/.xinitrc
+echo "dwmblocks &" >> ~/.xinitrc
+echo "/home/hs/.local/bin/newlook &" >> ~/.xinitrc
