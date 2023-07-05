@@ -43,6 +43,9 @@ sudo pacman -S --noconfirm --needed xdg-utils
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
 
+cd
+cp /etc/X11/xinitrc ~/.xinitrc
+
 # Install yay
 cd
 git clone https://aur.archlinux.org/yay.git
@@ -68,15 +71,10 @@ cd st
 sudo make clean install
 
 cd
-cp /etc/X11/xinitrc ~/.xinitrc
-
-cd
 git clone https://github.com/torrinfail/dwmblocks.git
 cdd dwmblocks
 sudo make clean install
 
-cd
-sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
 # Move wallpapers folder from github to walls
 cd
