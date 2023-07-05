@@ -5,7 +5,6 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
 sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm --needed xorg  
-sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed libxft
 sudo pacman -S --noconfirm --needed libxinerama
 sudo pacman -S --noconfirm --needed vim
@@ -43,6 +42,7 @@ sudo pacman -S --noconfirm --needed xdg-utils
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
 
+cd
 mkdir -p .local/src
 git clone https://github.com/bugswriter/dwm.git
 git clone https://github.com/bugswriter/dmenu.git
