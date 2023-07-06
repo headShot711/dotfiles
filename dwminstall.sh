@@ -81,12 +81,12 @@ mkdir -p walls
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
 # Enable services
-sudo systemctl enable bluetooth.service
+#sudo systemctl enable bluetooth.service
 
 # Get rid of the beep!
-sudo -i
-rmmod pcspkr
-echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
+#sudo -i
+#rmmod pcspkr
+#echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
 
 # add to xinitrc
 
