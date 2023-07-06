@@ -3,6 +3,7 @@
 # Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
+# Install packages
 sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm --needed libx11
 sudo pacman -S --noconfirm --needed xlib
