@@ -54,6 +54,8 @@ sudo pacman -S --noconfirm --needed htop
 
 cd
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
+# Rmove last 5 lines from .xinintrc
+head -n -5 .xinitrc > temp && mv temp .xinitrc
 
 cd
 mkdir -p .local/src
