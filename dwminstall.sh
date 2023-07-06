@@ -86,6 +86,7 @@ cd
 # Move script
 cd
 sudo cp -rv ~/dotfiles/newlook.sh ~/.local/src/
+sudo chmod +x ~/.local/src/newlook.sh
 cd
 
 # Enable services
