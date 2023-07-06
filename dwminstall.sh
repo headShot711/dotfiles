@@ -51,16 +51,6 @@ sudo pacman -S --noconfirm --needed leafpad
 cd
 cp /etc/X11/xinitrc ~/.xinitrc
 
-# Install yay
-cd
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd
-
-yay -S --noconfirm ly
-
-
 cd
 mkdir -p .local/src
 git clone https://github.com/bugswriter/dwm.git
@@ -88,7 +78,6 @@ sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
 # Enable services
 sudo systemctl enable bluetooth.service
-sudo systemctl enable ly.service
 
 # Get rid of the beep!
 sudo -i
