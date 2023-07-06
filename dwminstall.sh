@@ -83,10 +83,11 @@ mkdir -p walls
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 cd
 
-# Move script
+# Move newlook script
 cd
 sudo cp -rv ~/dotfiles/newlook.sh ~/.local/src/
-sudo chmod +x ~/.local/src/newlook.sh
+cd .local/src
+sudo chmod +x newlook.sh
 cd
 
 # Enable services
@@ -99,7 +100,7 @@ cd
 
 # add to xinitrc
 
-echo "/home/hs/.local/bin/newlook &" >> ~/.xinitrc
+echo "/home/hs/.local/src/newlook &" >> ~/.xinitrc
 echo "xrandr -s 1920x1080" >> ~/.xinitrc
 echo "xcompmgr &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
