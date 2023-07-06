@@ -23,28 +23,28 @@ sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 sudo pacman -S --noconfirm --needed xdotool
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed htop
-#sudo pacman -S --noconfirm --needed unzip
-#sudo pacman -S --noconfirm --needed p7zip
-#sudo pacman -S --noconfirm --needed pulseaudio
-#sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
-#sudo pacman -S --noconfirm --needed alsa-utils
-#sudo pacman -S --noconfirm --needed pavucontrol
-#sudo pacman -S --noconfirm --needed polkit-gnome
-#sudo pacman -S --noconfirm --needed mpv
-#sudo pacman -S --noconfirm --needed pcmanfm
-#sudo pacman -S --noconfirm --needed ranger
-#sudo pacman -S --noconfirm --needed gvfs
-#sudo pacman -S --noconfirm --needed gvfs-mtp
-#sudo pacman -S --noconfirm --needed ntfs-3g
-#sudo pacman -S --noconfirm --needed bluez
-#sudo pacman -S --noconfirm --needed bluez-utils
-#sudo pacman -S --noconfirm --needed blueman
-#sudo pacman -S --noconfirm --needed networkmanager
-#sudo pacman -S --noconfirm --needed network-manager-applet
-#sudo pacman -S --noconfirm --needed dhcpcd
-#sudo pacman -S --noconfirm --needed wpa_supplicant
-#sudo pacman -S --noconfirm --needed curl
-#sudo pacman -S --noconfirm --needed leafpad
+sudo pacman -S --noconfirm --needed unzip
+sudo pacman -S --noconfirm --needed p7zip
+sudo pacman -S --noconfirm --needed pulseaudio
+sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
+sudo pacman -S --noconfirm --needed alsa-utils
+sudo pacman -S --noconfirm --needed pavucontrol
+sudo pacman -S --noconfirm --needed polkit-gnome
+sudo pacman -S --noconfirm --needed mpv
+sudo pacman -S --noconfirm --needed pcmanfm
+sudo pacman -S --noconfirm --needed ranger
+sudo pacman -S --noconfirm --needed gvfs
+sudo pacman -S --noconfirm --needed gvfs-mtp
+sudo pacman -S --noconfirm --needed ntfs-3g
+sudo pacman -S --noconfirm --needed bluez
+sudo pacman -S --noconfirm --needed bluez-utils
+sudo pacman -S --noconfirm --needed blueman
+sudo pacman -S --noconfirm --needed networkmanager
+sudo pacman -S --noconfirm --needed network-manager-applet
+sudo pacman -S --noconfirm --needed dhcpcd
+sudo pacman -S --noconfirm --needed wpa_supplicant
+sudo pacman -S --noconfirm --needed curl
+sudo pacman -S --noconfirm --needed leafpad
 
 cd
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
@@ -77,7 +77,7 @@ mkdir -p walls
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 cd
 
-# Move newlook script
+# Move and setup newlook script
 cd
 sudo cp -rv ~/dotfiles/newlook.sh ~/.local/src/
 cd .local/src
@@ -85,7 +85,7 @@ sudo chmod +x newlook.sh
 cd
 
 # Enable services
-#sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
 
 # add to xinitrc
 
