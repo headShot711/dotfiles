@@ -9,7 +9,7 @@ sudo pacman -S --noconfirm --needed xlib
 sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm --needed freetype2
 sudo pacman -S --noconfirm --needed fontconfig
-#sudo pacman -S --noconfirm --needed xorg
+sudo pacman -S --noconfirm --needed xorg-xrandr
 #sudo pacman -S --noconfirm --needed xorg-server
 #sudo pacman -S --noconfirm --needed xorg-xinit
 #sudo pacman -S --noconfirm --needed xorg-utils
