@@ -49,7 +49,7 @@ sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
 
 cd
-cp /etc/X11/xinitrc ~/.xinitrc
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
 cd
 mkdir -p .local/src
