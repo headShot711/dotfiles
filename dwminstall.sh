@@ -10,11 +10,6 @@ sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm --needed freetype2
 sudo pacman -S --noconfirm --needed fontconfig
 sudo pacman -S --noconfirm --needed xorg-xrandr
-#sudo pacman -S --noconfirm --needed xorg-server
-#sudo pacman -S --noconfirm --needed xorg-xinit
-#sudo pacman -S --noconfirm --needed xorg-utils
-#sudo pacman -S --noconfirm --needed xorg-xinit
-#sudo pacman -S --noconfirm --needed xorg-server-utils
 sudo pacman -S --noconfirm --needed libxft
 sudo pacman -S --noconfirm --needed libxinerama
 sudo pacman -S --noconfirm --needed vim
@@ -48,7 +43,6 @@ sudo pacman -S --noconfirm --needed htop
 #sudo pacman -S --noconfirm --needed network-manager-applet
 #sudo pacman -S --noconfirm --needed dhcpcd
 #sudo pacman -S --noconfirm --needed wpa_supplicant
-#sudo pacman -S --noconfirm --needed xdg-utils
 #sudo pacman -S --noconfirm --needed curl
 #sudo pacman -S --noconfirm --needed leafpad
 
@@ -93,11 +87,6 @@ cd
 # Enable services
 #sudo systemctl enable bluetooth.service
 
-# Get rid of the beep!
-#sudo -i
-#rmmod pcspkr
-#echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
-
 # add to xinitrc
 
 echo "/home/hs/.local/src/newlook.sh &" >> ~/.xinitrc
@@ -105,5 +94,11 @@ echo "xrandr -s 1920x1080" >> ~/.xinitrc
 echo "xcompmgr &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 echo "dwmblocks &" >> ~/.xinitrc
-
 cd
+
+# Get rid of the beep!
+sudo -i
+rmmod pcspkr
+echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
+echo "Installation completed. Reboot system"
+printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
