@@ -1,4 +1,4 @@
-.#!/bin/sh
+#!/bin/sh
 
 # Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
