@@ -100,7 +100,7 @@ cd
 
 # add to xinitrc
 
-echo "/home/hs/.local/src/newlook &" >> ~/.xinitrc
+echo "/home/hs/.local/src/newlook.sh &" >> ~/.xinitrc
 echo "xrandr -s 1920x1080" >> ~/.xinitrc
 echo "xcompmgr &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
