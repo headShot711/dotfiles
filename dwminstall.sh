@@ -93,8 +93,10 @@ cd
 
 # add to xinitrc
 
+echo "/home/hs/.local/bin/newlook &" >> ~/.xinitrc
+echo "xrandr -s 1920x1080" >> ~/.xinitrc
 echo "xcompmgr &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 echo "dwmblocks &" >> ~/.xinitrc
-echo "/home/hs/.local/bin/newlook &" >> ~/.xinitrc
+
 cd
