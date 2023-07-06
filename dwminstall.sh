@@ -83,6 +83,11 @@ mkdir -p walls
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 cd
 
+# Move script
+cd
+sudo cp -rv ~/dotfiles/newlook.sh .local/src
+cd
+
 # Enable services
 #sudo systemctl enable bluetooth.service
 
