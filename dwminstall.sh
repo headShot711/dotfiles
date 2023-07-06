@@ -81,6 +81,7 @@ sudo make clean install
 cd
 mkdir -p walls
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
+cd
 
 # Enable services
 #sudo systemctl enable bluetooth.service
@@ -96,3 +97,4 @@ echo "xcompmgr &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 echo "dwmblocks &" >> ~/.xinitrc
 echo "/home/hs/.local/bin/newlook &" >> ~/.xinitrc
+cd
