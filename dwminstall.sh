@@ -72,7 +72,7 @@ sudo make clean install
 
 cd
 git clone https://github.com/torrinfail/dwmblocks.git
-cdd dwmblocks
+cd dwmblocks
 sudo make clean install
 
 
