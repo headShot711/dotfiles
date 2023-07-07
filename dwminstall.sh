@@ -46,6 +46,8 @@ sudo pacman -S --noconfirm --needed dhcpcd
 sudo pacman -S --noconfirm --needed wpa_supplicant
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
+sudo pacman -S --noconfirm --needed pyside2
+sudo pacman -S --noconfirm --needed syncplay
 
 cd
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
