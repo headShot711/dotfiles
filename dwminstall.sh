@@ -39,7 +39,7 @@ sudo pacman -S --noconfirm --needed gvfs-mtp
 sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed bluez
 sudo pacman -S --noconfirm --needed bluez-utils
-sudo pacman -S --noconfirm --needed blueman
+#sudo pacman -S --noconfirm --needed blueman
 sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed network-manager-applet
 sudo pacman -S --noconfirm --needed dhcpcd
