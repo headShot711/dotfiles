@@ -1,24 +1,4 @@
-sudo systemctl enable libvirtd.servicesudo systemctl enable libvirtd.service# Make directories
-cd
-mkdir -v walls
-mkdir -v ~/.config
-mkdir -v ~/.config/i3
-mkdir -v ~/.config/alacritty
-mkdir -v ~/.config/polybar# Make directories
-cd
-mkdir -v walls
-mkdir -v ~/.config
-mkdir -v ~/.config/i3
-mkdir -v ~/.config/alacritty
-mkdir -v ~/.config/polybar#!/bin/bash
-
-# Make directories
-cd
-mkdir -v walls
-mkdir -v ~/.config
-mkdir -v ~/.config/i3
-mkdir -v ~/.config/alacritty
-mkdir -v ~/.config/polybar
+#!/bin/bash
 
 #Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
