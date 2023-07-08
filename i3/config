@@ -44,7 +44,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # Startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec_always feh --bg-fill ~/walls/wall.jpg
+exec_always feh --bg-fill ~/walls/wallhaven-8xeog1.jpg
 exec --no-startup-id picom -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -63,10 +63,10 @@ exec_always --no-startup-id autotiling -l 2
 bindsym $mod+x exec --no-startup-id i3lock --color 475263
 
 # Lockscreen
-#bindsym $mod+l exec --no-startup-id blurlock
+bindsym $mod+l exec --no-startup-id blurlock
 
 # i3lock with custom background
-bindsym $mod+l exec --no-startup-id i3lock -i ~/walls/lock.png --no-unlock-indicator
+#bindsym $mod+l exec --no-startup-id i3lock -i ~/walls/lock.png --no-unlock-indicator
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
