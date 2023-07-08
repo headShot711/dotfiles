@@ -103,20 +103,8 @@ cd .local/src
 sudo chmod +x newlook.sh
 cd
 
-# Install yay
-cd
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-# Install yay packages
-cd
-yay -S --noconfirm autotiling
-yay -S --noconfirm ly
-
 # Enable services
 sudo systemctl enable bluetooth.service
-sudo systemctl enable ly.service
 
 # add to xinitrc
 
