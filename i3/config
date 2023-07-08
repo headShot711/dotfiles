@@ -59,12 +59,6 @@ exec --no-startup-id xrandr -s 1920x1080
 # Autotiling
 exec_always --no-startup-id autotiling -l 2
 
-# lock
-bindsym $mod+x exec --no-startup-id i3lock --color 475263
-
-# Lockscreen
-bindsym $mod+l exec --no-startup-id blurlock
-
 # i3lock with custom background
 #bindsym $mod+l exec --no-startup-id i3lock -i ~/walls/lock.png --no-unlock-indicator
 
