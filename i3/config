@@ -92,7 +92,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 bindsym $mod+q kill
 
 # i3lock with custom background
-#bindsym $mod+l exec --no-startup-id i3lock -i ~/walls/lock.png --no-unlock-indicator
+bindsym $mod+l exec --no-startup-id i3lock -i ~/walls/lock.png --no-unlock-indicator
 
 #run dmenu
 #bindsym $mod+d exec --no-startup-id dmenu_run
