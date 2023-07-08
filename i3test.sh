@@ -1,4 +1,16 @@
-#!/bin/bash
+# Make directories
+cd
+mkdir -v walls
+mkdir -v ~/.config
+mkdir -v ~/.config/i3
+mkdir -v ~/.config/alacritty
+mkdir -v ~/.config/polybar# Make directories
+cd
+mkdir -v walls
+mkdir -v ~/.config
+mkdir -v ~/.config/i3
+mkdir -v ~/.config/alacritty
+mkdir -v ~/.config/polybar#!/bin/bash
 
 # Make directories
 cd
@@ -14,7 +26,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed lxappearance nitrogen picom i3-gaps i3status i3lock curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim  polkit-gnome qbittorrent
+sudo pacman -S --noconfirm --needed lxappearance nitrogen picom i3-gaps i3status i3lock curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim  polkit-gnome qbittorrent bluez bluez-utils
 
 # Install XFCE
 #sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
