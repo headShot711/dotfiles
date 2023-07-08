@@ -97,10 +97,8 @@ makepkg -si
 
 # Install yay packages
 cd
-yay -S --noconfirm pfetch
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
-yay -S --noconfirm brave-bin
 
 # Copy config files
 cd
