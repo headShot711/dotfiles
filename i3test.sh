@@ -33,7 +33,7 @@ makepkg -si
 
 # Install yay packages
 cd
-yay -S --noconfirm autotiling ly
+yay -S --noconfirm autotiling ly brave-bin
 
 # Copy config files
 cd
