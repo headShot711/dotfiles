@@ -22,7 +22,7 @@ sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xbacklight lxappearance nitrogen picom i3-gaps i3status i3lock base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim  polkit-gnome qbittorrent bluez bluez-utils vlc
 
 # Install XFCE
-sudo pacman -S --noconfirm --needed xfce4
+sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
 
 # Install yay
 sudo pacman -S --noconfirm --needed go
