@@ -52,8 +52,8 @@ sudo pacman -S --noconfirm --needed xdg-user-dirs
 #sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
 sudo pacman -S --noconfirm --needed alsa-utils
 #sudo pacman -S --noconfirm --needed pavucontrol
-sudo pacman -S --noconfirm --needed mocp
-sudo pacman -S --noconfirm --needed zathura  
+#sudo pacman -S --noconfirm --needed mocp
+#sudo pacman -S --noconfirm --needed zathura  
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed leafpad  
 sudo pacman -S --noconfirm --needed ttf-liberation
@@ -66,20 +66,20 @@ sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed vim 
 sudo pacman -S --noconfirm --needed polkit-gnome
-sudo pacman -S --noconfirm --needed task
-sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
-#sudo pacman -S --noconfirm --needed qbittorrent      
-#sudo pacman -S --noconfirm --needed libvirt
-#sudo pacman -S --noconfirm --needed qemu-full
-#sudo pacman -S --force --needed iptables-nft
-#sudo pacman -S --noconfirm --needed dnsmasq
-#sudo pacman -S --noconfirm --needed virt-manager
-#sudo pacman -S --noconfirm --needed qemu-arch-extra
-#sudo pacman -S --noconfirm --needed ovmf
-#sudo pacman -S --noconfirm --needed vde2
-#sudo pacman -S --noconfirm --needed ebtables
-#sudo pacman -S --noconfirm --needed bridge-utils
-#sudo pacman -S --noconfirm --needed openbsd-netcat
+#sudo pacman -S --noconfirm --needed task
+#sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
+sudo pacman -S --noconfirm --needed qbittorrent      
+sudo pacman -S --noconfirm --needed libvirt
+sudo pacman -S --noconfirm --needed qemu-full
+sudo pacman -S --force --needed iptables-nft
+sudo pacman -S --noconfirm --needed dnsmasq
+sudo pacman -S --noconfirm --needed virt-manager
+sudo pacman -S --noconfirm --needed qemu-arch-extra
+sudo pacman -S --noconfirm --needed ovmf
+sudo pacman -S --noconfirm --needed vde2
+sudo pacman -S --noconfirm --needed ebtables
+sudo pacman -S --noconfirm --needed bridge-utils
+sudo pacman -S --noconfirm --needed openbsd-netcat
 #sudo pacman -S --noconfirm --needed nomacs
 #sudo pacman -S --noconfirm --needed keepasxc
 #sudo pacman -S --noconfirm --needed gimp
@@ -101,19 +101,6 @@ yay -S --noconfirm pfetch
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
 yay -S --noconfirm brave-bin
-
-
-# Install snap
-#cd
-#git clone https://aur.archlinux.org/snapd.git
-#cd snapd
-#makepkg -si
-#sudo systemctl enable --now snapd.socket
-#sudo ln -s /var/lib/snapd/snap /snap
-
-# Install snap packages
-#sudo snap install gridplayer
-#sudo snap install riseup-vpn --classic
 
 # Copy config files
 cd
