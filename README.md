@@ -16,4 +16,4 @@ git clone https://github.com/headShot711/dotfiles.git
 
 cd dotfiles
 
-sh install.sh
+sh i3install.sh
