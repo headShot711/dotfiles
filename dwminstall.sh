@@ -5,6 +5,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
 # Install packages
 sudo pacman -Syyu --noconfirm
+sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed libx11
 sudo pacman -S --noconfirm --needed xlib
 sudo pacman -S --noconfirm --needed base-devel
@@ -23,6 +24,7 @@ sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 sudo pacman -S --noconfirm --needed xdotool
+sudo pacman -S --noconfirm --needed yt-dlp
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed unzip
@@ -43,6 +45,25 @@ sudo pacman -S --noconfirm --needed dhcpcd
 sudo pacman -S --noconfirm --needed wpa_supplicant
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed leafpad
+sudo pacman -S --noconfirm --needed qbittorrent      
+sudo pacman -S --noconfirm --needed libvirt
+sudo pacman -S --noconfirm --needed qemu-full
+sudo pacman -S --force --needed iptables-nft
+sudo pacman -S --noconfirm --needed dnsmasq
+sudo pacman -S --noconfirm --needed virt-manager
+sudo pacman -S --noconfirm --needed qemu-arch-extra
+sudo pacman -S --noconfirm --needed ovmf
+sudo pacman -S --noconfirm --needed vde2
+sudo pacman -S --noconfirm --needed ebtables
+sudo pacman -S --noconfirm --needed bridge-utils
+sudo pacman -S --noconfirm --needed openbsd-netcat
+sudo pacman -S --noconfirm --needed xdg-utils
+sudo pacman -S --noconfirm --needed xdg-user-dirs
+sudo pacman -S --noconfirm --needed exfat-utils
+sudo pacman -S --noconfirm --needed linux-headers
+sudo pacman -S --noconfirm --needed gvfs
+sudo pacman -S --noconfirm --needed gvfs-mtp
+sudo pacman -S --noconfirm --needed ntfs-3g
 
 cd
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
@@ -82,8 +103,20 @@ cd .local/src
 sudo chmod +x newlook.sh
 cd
 
+# Install yay
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# Install yay packages
+cd
+yay -S --noconfirm autotiling
+yay -S --noconfirm ly
+
 # Enable services
 sudo systemctl enable bluetooth.service
+sudo systemctl enable ly.service
 
 # add to xinitrc
 
@@ -98,5 +131,6 @@ cd
 sudo -i
 rmmod pcspkr
 echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
+
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
