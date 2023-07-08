@@ -52,15 +52,8 @@ exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-
-# Set screen resolution
 exec --no-startup-id xrandr -s 1920x1080
-
-# Autotiling
 exec_always --no-startup-id autotiling -l 2
-
-# i3lock with custom background
-#bindsym $mod+l exec --no-startup-id i3lock -i ~/walls/lock.png --no-unlock-indicator
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -98,6 +91,11 @@ client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
 # Keybindings
+
+# i3lock with custom background
+#bindsym $mod+l exec --no-startup-id i3lock -i ~/walls/lock.png --no-unlock-indicator
+
+#run dmenu
 #bindsym $mod+d exec --no-startup-id dmenu_run
 
 # start rofi full
