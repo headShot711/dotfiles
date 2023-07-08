@@ -11,10 +11,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
 # Packages to install from Arch Linux official repos
 
-sudo pacman -S --noconfirm --needed go lxappearance nitrogen picom i3-gaps i3status i3lock curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch\ 
-lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip bluez bluez-utils networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad\ 
-ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim polkit-gnome qbittorrent libvirt qemu-full iptables-nft dnsmasq virt-manager qemu-arch-extra ovmf vde2 ebtables\ 
-bridge-utils openbsd-netcat
+sudo pacman -S --noconfirm --needed go lxappearance nitrogen picom i3-gaps i3status i3lock curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip bluez bluez-utils networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim polkit-gnome qbittorrent libvirt qemu-full iptables-nft dnsmasq virt-manager qemu-arch-extra ovmf vde2 ebtables bridge-utils openbsd-netcat
 
 # Install XFCE
 #sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
