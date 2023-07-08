@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Make directories
+cd
+mkdir -v walls
+mkdir -v ~/.config
+mkdir -v ~/.config/i3
+mkdir -v ~/.config/alacritty
+mkdir -v ~/.config/polybar
+
 #Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
@@ -21,14 +29,6 @@ makepkg -si
 # Install yay packages
 cd
 yay -S --noconfirm autotiling ly
-
-# Make directories
-cd
-mkdir -v walls
-mkdir -v ~/.config
-mkdir -v ~/.config/i3
-mkdir -v ~/.config/alacritty
-mkdir -v ~/.config/polybar
 
 # Copy config files
 cd
