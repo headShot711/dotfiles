@@ -60,7 +60,6 @@ sudo chmod +x ~/.config/polybar/launch.sh
 
 # Enable services
 sudo systemctl enable bluetooth.service
-sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
 
 # Most important command! Get rid of the beep!
