@@ -12,7 +12,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-#sudo pacman -S --noconfirm --needed xorg  
+sudo pacman -S --noconfirm --needed xorg  
 sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed nitrogen
