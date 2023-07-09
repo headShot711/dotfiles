@@ -24,6 +24,13 @@ sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xbacklight lxappearance nit
 # Install XFCE
 sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
 
+# Install Virtual Box
+sudo pacman -S --noconfirm virtualbox
+sudo pacman -S --noconfirm virtualbox-host-modules-arch
+sudo modprobe vboxdrv
+sudo pacman -S --noconfirm qt5-x11extras
+sudo gpasswd -a hs vboxusers
+
 # Install yay
 sudo pacman -S --noconfirm --needed go
 cd
@@ -33,7 +40,7 @@ makepkg -si
 
 # Install yay packages
 cd
-yay -S --noconfirm --needed autotiling ly brave-bin
+yay -S --noconfirm --needed autotiling ly brave-bin virtualbox-ext-oracle
 
 # Copy config files
 cd
