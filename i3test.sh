@@ -19,17 +19,10 @@ sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mir
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xbacklight lxappearance nitrogen picom i3-gaps i3status i3lock base-devel tor mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim  polkit-gnome qbittorrent bluez bluez-utils vlc
+sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xbacklight lxappearance nitrogen picom i3-gaps i3status i3lock base-devel tor mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim  polkit-gnome qbittorrent bluez bluez-utils vlc virtualbox virtualbox-host-modules-arch qt5-x11extras
 
 # Install XFCE
 sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
-
-# Install Virtual Box
-sudo pacman -S --noconfirm virtualbox
-sudo pacman -S --noconfirm virtualbox-host-modules-arch
-sudo modprobe vboxdrv
-sudo pacman -S --noconfirm qt5-x11extras
-sudo gpasswd -a hs vboxusers
 
 # Install yay
 sudo pacman -S --noconfirm --needed go
@@ -49,6 +42,10 @@ sudo cp -rv ~/dotfiles/alacritty/* ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/polybar/* ~/.config/polybar/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo chmod +x ~/.config/polybar/launch.sh
+
+# Setup Virtual Box
+sudo modprobe vboxdrv
+sudo gpasswd -a hs vboxusers
 
 # Enable services
 sudo systemctl enable bluetooth.service
