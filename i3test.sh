@@ -19,7 +19,7 @@ sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mir
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xbacklight lxappearance nitrogen picom i3-gaps i3status i3lock base-devel tor mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim  polkit-gnome qbittorrent bluez bluez-utils vlc virtualbox virtualbox-host-modules-arch qt5-x11extras
+sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xbacklight lxappearance nitrogen picom i3-gaps i3status i3lock base-devel tor mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch lm_sensors yt-dlp rofi polybar dunst xclip unzip p7zip networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot mpv thunar feh alacritty firefox vim  polkit-gnome qbittorrent bluez bluez-utils vlc
 
 # Install XFCE
 sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
@@ -33,7 +33,7 @@ makepkg -si
 
 # Install yay packages
 cd
-yay -S --noconfirm --needed autotiling ly brave-bin virtualbox-ext-oracle
+yay -S --noconfirm --needed autotiling ly brave-bin
 
 # Copy config files
 cd
@@ -44,6 +44,8 @@ sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo chmod +x ~/.config/polybar/launch.sh
 
 # Setup Virtual Box
+sudo pacman -S --noconfirm virtualbox virtualbox-host-modules-arch qt5-x11extras
+yay -S --noconfirm virtualbox-ext-oracle
 sudo modprobe vboxdrv
 sudo gpasswd -a hs vboxusers
 
