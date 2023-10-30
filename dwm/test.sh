@@ -7,6 +7,7 @@ sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed xorg-xinit
 sudo pacman -S --noconfirm --needed xorg-server
+sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed git  
 sudo pacman -S --noconfirm --needed vim  
 sudo pacman -S --noconfirm --needed dmenu  
@@ -34,6 +35,12 @@ sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed exa
 sudo pacman -S --noconfirm --needed tlp
 sudo pacman -S --noconfirm --needed thermald
+
+# Install yay
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 # Install dwm
 cd
