@@ -48,6 +48,7 @@ cd
 
 # Add to xinitrc
 cp /etc/X11/xinit/xinitrc /home/hs/.xinitrc
+echo "exec dwm" > ~/.xinitrc
 
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
