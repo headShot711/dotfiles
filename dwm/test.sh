@@ -47,12 +47,6 @@ cd ../st
 sudo make clean install
 cd
 
-# Install dwmblocks
-cd
-git clone https://github.com/torrinfail/dwmblocks.git
-cd dwmblocks
-sudo make clean install
-
 # Move wallpapers folder from github to walls
 cd
 mkdir -p walls
@@ -67,7 +61,6 @@ echo "xrandr -s 1920x1080" >> ~/.xinitrc
 feh --bg-scale ~/walls/wall.jpg
 echo "picom &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
-echo "dwmblocks &" >> ~/.xinitrc
 cd
 
 # Copy config files
