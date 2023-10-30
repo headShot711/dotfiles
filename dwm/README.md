@@ -1,0 +1,1 @@
+Install dwm rice
