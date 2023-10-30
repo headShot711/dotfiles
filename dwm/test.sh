@@ -63,6 +63,8 @@ echo "picom &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 cd
 
+echo "alias 'vi=vim'" >> ~/.bashrc
+
 Copy config files and recompile dwm
 sudo cp -rv ~/dotfiles/dwm/config.h ~/dwm/
 cd ~/dwm
