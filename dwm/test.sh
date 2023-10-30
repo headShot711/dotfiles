@@ -71,6 +71,9 @@ cd
 
 # Copy config files
 sudo cp -rv ~/dotfiles/dwm/config.h ~/dwm/
+cd ~/dwm
+sudo make clean install
+cd
 
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
