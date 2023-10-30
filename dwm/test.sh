@@ -58,7 +58,7 @@ cp /etc/X11/xinit/xinitrc /home/hs/.xinitrc
 # Rmove last 5 lines from .xinintrc
 head -n -5 .xinitrc > temp && mv temp .xinitrc
 echo "xrandr -s 1920x1080" >> ~/.xinitrc
-feh --bg-scale ~/walls/wall.jpg
+echo "feh --bg-scale ~/walls/wall.jpg" >> ~/.xinitrc
 echo "picom &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 cd
