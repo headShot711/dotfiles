@@ -33,7 +33,7 @@ sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed polkit-gnome
 
-#Install dwm
+# Install dwm
 cd
 git clone https://git.suckless.org/dwm
 git clone https://git.suckless.org/dmenu
@@ -45,6 +45,9 @@ sudo make clean install
 cd ../st
 sudo make clean install
 cd
+
+# Add to xinitrc
+cp /etc/X11/xinit/xinitrc /home/hs/.xinitrc
 
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
