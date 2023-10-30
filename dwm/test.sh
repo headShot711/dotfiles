@@ -63,7 +63,7 @@ echo "picom &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 cd
 
-Copy config files
+Copy config files and recompile dwm
 sudo cp -rv ~/dotfiles/dwm/config.h ~/dwm/
 cd ~/dwm
 curl -O https://lists.suckless.org/dev/att-7590/shiftview.c
