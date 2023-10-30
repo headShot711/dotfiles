@@ -33,6 +33,8 @@ sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed exa
+sudo pacman -S --noconfirm --needed tlp
+sudo pacman -S --noconfirm --needed thermald
 
 # Install dwm
 cd
