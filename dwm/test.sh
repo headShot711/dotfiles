@@ -16,6 +16,7 @@ sudo pacman -S --noconfirm --needed picom
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed base-devel
+udo pacman -S --noconfirm --needed cmake
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed rofi
@@ -33,14 +34,17 @@ sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed polkit-gnome
 
 #Install dwm
-
-
-# Install yay
-
 cd
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
+git clone https://git.suckless.org/dwm
+git clone https://git.suckless.org/dmenu
+git clone https://git.suckless.org/st
+cd dwm
+sudo make clean install
+cd ../dmenu/
+sudo make clean install
+cd ../st
+sudo make clean install
+cd
 
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
