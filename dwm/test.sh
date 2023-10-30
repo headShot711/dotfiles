@@ -60,8 +60,8 @@ head -n -5 .xinitrc > temp && mv temp .xinitrc
 echo "xrandr -s 1920x1080" >> ~/.xinitrc
 echo "feh --bg-scale ~/walls/wall.jpg" >> ~/.xinitrc
 echo "picom &" >> ~/.xinitrc
-echo "exec dwm" >> ~/.xinitrc
 echo "exec slstatus &" >> ~/.xinitrc
+echo "exec dwm" >> ~/.xinitrc
 cd
 
 echo "alias 'vi=vim'" >> ~/.bashrc
