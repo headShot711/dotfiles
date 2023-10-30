@@ -61,6 +61,7 @@ echo "xrandr -s 1920x1080" >> ~/.xinitrc
 echo "feh --bg-scale ~/walls/wall.jpg" >> ~/.xinitrc
 echo "picom &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
+echo "exec slstatus &" >> ~/.xinitrc
 cd
 
 echo "alias 'vi=vim'" >> ~/.bashrc
@@ -76,6 +77,7 @@ cd
 git clone https://git.suckless.org/slstatus
 cd slstatus
 make
+sudo ln -sf ~/slstatus/slstatus /usr/local/bin
 cd
 
 echo "Installation completed. Reboot system"
