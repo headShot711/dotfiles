@@ -11,7 +11,6 @@ sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed vim  
 sudo pacman -S --noconfirm --needed dmenu  
 sudo pacman -S --noconfirm --needed alacritty  
-sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed picom
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed curl
