@@ -32,6 +32,7 @@ sudo pacman -S --noconfirm --needed ttf-font-awesome
 sudo pacman -S --noconfirm --needed thunar 
 sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed polkit-gnome
+sudo pacman -S --noconfirm --needed exa
 
 # Install dwm
 cd
@@ -67,6 +68,10 @@ echo "picom &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 echo "dwmblocks &" >> ~/.xinitrc
 cd
+
+# Add to bashrc
+echo "alias v='vim'" >> ~.bashrc
+echo "alias ls='exa-lah'" >> ~.bashrc
 
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
