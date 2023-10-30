@@ -65,11 +65,17 @@ cd
 
 echo "alias 'vi=vim'" >> ~/.bashrc
 
-Copy config files and recompile dwm
+# Copy config files and recompile dwm
 sudo cp -rv ~/dotfiles/dwm/config.h ~/dwm/
 cd ~/dwm
 curl -O https://lists.suckless.org/dev/att-7590/shiftview.c
 sudo make clean install
+cd
+
+# Compile slstatus
+git clone https://git.suckless.org/slstatus
+cd slstatus
+make
 cd
 
 echo "Installation completed. Reboot system"
