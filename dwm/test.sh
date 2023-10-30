@@ -59,6 +59,8 @@ mkdir -p walls
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 cd
 
+
+
 # Add to xinitrc
 cp /etc/X11/xinit/xinitrc /home/hs/.xinitrc
 # Rmove last 5 lines from .xinintrc
@@ -69,9 +71,8 @@ echo "exec dwm" >> ~/.xinitrc
 echo "dwmblocks &" >> ~/.xinitrc
 cd
 
-# Add to bashrc
-echo "alias v='vim'" >> ~.bashrc
-echo "alias ls='exa-lah'" >> ~.bashrc
+# Copy config files
+
 
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
