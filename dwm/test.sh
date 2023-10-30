@@ -46,9 +46,35 @@ cd ../st
 sudo make clean install
 cd
 
+# Install dwmblocks
+cd
+git clone https://github.com/torrinfail/dwmblocks.git
+cd dwmblocks
+sudo make clean install
+
+# Move wallpapers folder from github to walls
+cd
+mkdir -p walls
+sudo cp -rv ~/dotfiles/walls/* ~/walls/
+cd
+
+# Move and setup newlook script
+cd
+sudo cp -rv ~/dotfiles/newlook.sh ~/.local/src/
+cd .local/src
+sudo chmod +x newlook.sh
+cd
+
 # Add to xinitrc
 cp /etc/X11/xinit/xinitrc /home/hs/.xinitrc
-echo "exec dwm" > ~/.xinitrc
+# Rmove last 5 lines from .xinintrc
+head -n -5 .xinitrc > temp && mv temp .xinitrc
+echo "/home/hs/.local/src/newlook.sh &" >> ~/.xinitrc
+echo "xrandr -s 1920x1080" >> ~/.xinitrc
+echo "xcompmgr &" >> ~/.xinitrc
+echo "exec dwm" >> ~/.xinitrc
+echo "dwmblocks &" >> ~/.xinitrc
+cd
 
 echo "Installation completed. Reboot system"
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
