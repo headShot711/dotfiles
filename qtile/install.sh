@@ -14,7 +14,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed xorg-server xorg-xinit xorg-apps lxappearance nitrogen picom curl base-devel linux-headers vim htop neofetch dunst xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot thunar feh alacritty firefox polkit-gnome exa qtile lightdm lightdm-gtk-greeter python-util cmus mpv
+sudo pacman -S --noconfirm --needed xorg-server xorg-xinit xorg-apps lxappearance nitrogen picom curl base-devel linux-headers vim htop neofetch dunst xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot thunar feh alacritty firefox polkit-gnome exa qtile lightdm lightdm-gtk-greeter python-util cmus mpv lightdm lightdm-gtk-greeter
 
 # Install XFCE
 #sudo pacman -S --noconfirm --needed xfce4
