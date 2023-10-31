@@ -135,8 +135,8 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="sans",
-    fontsize=14,
+    font='Sans',
+    fontsize=16,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
@@ -159,6 +159,7 @@ screens = [
                 #widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
+                widget.CPU(background="#ffffff", foreground="#000000"),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
