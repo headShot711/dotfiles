@@ -135,8 +135,8 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Sans',
-    fontsize=16,
+    font='Noto Sans Bold',
+    fontsize=14,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
@@ -161,10 +161,35 @@ screens = [
                 # widget.StatusNotifier(),
                 widget.CPU(background="#ffffff", foreground="#000000"),
                 widget.Systray(),
+
+                # Seperator between widgets
+                widget.Sep(
+                    linewidth=2,
+                    padding=10,
+                    foreground="#fcf8c0",
+                    size_percent=65,
+                ),
+                
+                # Custom TextBox widget for 'Vol' (Volume) text display
+                widget.TextBox(
+                    font="Noto Sans Bold",
+                    text="Vol:",
+                    padding = 2,
+                    fontsize=13
+                ),
+
+                # Volume widget
+                widget.Volume(font="Noto Sans Bold",padding = 4,),
+
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
             ],
             24,
+
+            # Background color/opacity of the bar
+            #background='#2f9fb5', # Set the background color of the bar
+            #opacity=0.8,            # Set the opacity of the bar (optional)
+
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
