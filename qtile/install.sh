@@ -1,4 +1,4 @@
-#!/bin/sh
+sudo systemctl enable ly.service#!/bin/sh
 
 # Make directories
 cd
@@ -14,7 +14,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --no-confirm --needed xorg-server xorg-xinit xorg-apps lxappearance nitrogen picom curl base-devel linux-headers vim htop neofetch dunst xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot thunar feh alacritty firefox polkit-gnome exa qtile
+sudo pacman -S --noconfirm --needed xorg-server xorg-xinit xorg-apps lxappearance nitrogen picom curl base-devel linux-headers vim htop neofetch dunst xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot thunar feh alacritty firefox polkit-gnome exa qtile
 
 # Install XFCE
 #sudo pacman -S --noconfirm --needed xfce4
