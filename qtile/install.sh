@@ -26,6 +26,9 @@ sudo cp -rv ~/dotfiles/qtile/autostart.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/alacritty.yml ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/qtile/picom.conf ~/.config/picom/
 sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
+cd .config/qtile
+chmod +x autostart.sh
+cd
 
 # Enable services
 #sudo systemctl enable bluetooth.service
