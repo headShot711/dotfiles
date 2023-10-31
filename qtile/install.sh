@@ -1,4 +1,4 @@
-sudo systemctl enable ly.service#!/bin/sh
+#!/bin/sh
 
 # Make directories
 cd
