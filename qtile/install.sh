@@ -19,17 +19,6 @@ sudo pacman -S xorg-server xorg-xinit xorg-apps lxappearance nitrogen picom curl
 # Install XFCE
 #sudo pacman -S --noconfirm --needed xfce4
 
-# Install yay
-sudo pacman -S --no-confirm --needed go
-cd
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-# Install yay packages
-cd
-yay -S --noconfirm ly
-
 # Copy config files
 cd
 sudo cp -rv ~/dotfiles/qtile/config.py ~/.config/qtile/
@@ -41,7 +30,6 @@ sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
 # Enable services
 #sudo systemctl enable bluetooth.service
 #sudo systemctl enable libvirtd.service
-sudo systemctl enable ly.service
 
 # Most important command! Get rid of the beep!
 sudo -i
