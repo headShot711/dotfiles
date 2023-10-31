@@ -27,7 +27,7 @@ sudo cp -rv ~/dotfiles/qtile/alacritty.yml ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/qtile/picom.conf ~/.config/picom/
 sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
 cd .config/qtile
-chmod +x autostart.sh
+sudo chmod +x autostart.sh
 cd
 
 # Enable services
