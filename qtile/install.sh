@@ -5,7 +5,6 @@ cd
 mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/qtile
-mkdir -v ~/.config/picom
 mkdir -v ~/.config/alacritty
 
 #Add parallel downloading
