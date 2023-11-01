@@ -23,10 +23,6 @@ sudo pacman -S --noconfirm --needed lightdm-gtk-greeter
 sudo pacman -S --noconfirm --needed go
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed nitrogen
-sudo pacman -S --noconfirm --needed picom
-sudo pacman -S --noconfirm --needed i3-gaps
-sudo pacman -S --noconfirm --needed i3status
-sudo pacman -S --noconfirm --needed i3lock
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm --needed mtools
@@ -38,10 +34,8 @@ sudo pacman -S --noconfirm --needed gvfs-mtp
 sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed neofetch
-sudo pacman -S --noconfirm --needed lm_sensors
+sudo pacman -S --noconfirm --needed tlp
 sudo pacman -S --noconfirm --needed yt-dlp
-sudo pacman -S --noconfirm --needed rofi
-sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed dunst
 sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed unzip
