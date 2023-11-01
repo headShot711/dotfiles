@@ -37,6 +37,9 @@ from libqtile.utils import guess_terminal
 mod = "mod4"
 terminal = guess_terminal()
 
+browser = "brave"
+fileManager = "thunar"
+
 keys = [
     # A list of available commands that can be bound to keys can be found
     # at https://docs.qtile.org/en/latest/manual/config/lazy.html
@@ -83,6 +86,24 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+
+    Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
+    Key([mod], "t", lazy.spawn(fileManager), desc="Launch file manager"),
+
+    # Audio key controls
+        Key([], "XF86AudioRaiseVolume", lazy.spawn(
+            "pactl set-sink-volume @DEFAULT_SINK@ +5%")),
+        Key([], "XF86AudioLowerVolume", lazy.spawn(
+            "pactl set-sink-volume @DEFAULT_SINK@ -5%")),
+        Key([], "XF86AudioMute", lazy.spawn(
+            "pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+
+    # Brightness controls
+        Key([], "XF86MonBrightnessUp", lazy.spawn(
+            "brillo -A 10")),
+        Key([], "XF86MonBrightnessDown", lazy.spawn(
+            "brillo -U 10")),
+
 ]
 
 groups = [Group(i) for i in "123456789"]
