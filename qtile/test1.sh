@@ -75,6 +75,7 @@ sudo pacman -S --noconfirm --needed vde2
 sudo pacman -S --noconfirm --needed ebtables
 sudo pacman -S --noconfirm --needed bridge-utils
 sudo pacman -S --noconfirm --needed openbsd-netcat
+sudo pacman -S --noconfirm --needed python-dbus-next
 
 # Install XFCE
 sudo pacman -S --noconfirm --needed xfce4
@@ -89,6 +90,13 @@ sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
 cd .config/qtile
 sudo chmod +x autostart.sh
 cd
+
+# Configure brightness with brillo
+sudo chmod a+rw /sys/class/backlight/nv_backlight/brightness
+git clone https://gitlab.com/cameronnemo/brillo.git
+cd brillo
+sudo make
+sudo make install
 
 # Enable services
 sudo systemctl enable lightdm.service
