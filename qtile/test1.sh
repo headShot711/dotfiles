@@ -67,6 +67,7 @@ sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed vim 
+sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed qbittorrent      
 sudo pacman -S --noconfirm --needed libvirt
