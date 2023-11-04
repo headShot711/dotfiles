@@ -10,10 +10,7 @@ sudo apt install -y build-essential
 xdg-user-dirs-update
 
 # i3 WM
-sudo apt install -y i3-wm suckless-tools sxhkd polybar
-
-# xfce4
-sudo apt install -y xfce4 xfce4-goodies
+sudo apt install -y i3-wm suckless-tools sxhkd
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
@@ -23,11 +20,11 @@ sudo systemctl enable acpid
 # Networking
 sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 
-# Thunar
-sudo apt install -y thunar thunar-archive-plugin thunar-volman file-roller
+# Pcmanfm
+sudo apt install -y pcmanfm
 
 # Terminal (eg. terminator,kitty,xcfe4-terminal)
-sudo apt install -y xcfe4-terminal
+sudo apt install -y rxvt-unicode xterm
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
