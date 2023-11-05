@@ -5,7 +5,7 @@ mkdir -v ~/.config
 mkdir -v ~/.config/i3
 mkdir -v ~/.config/i3status
 
-#Add parallel downloading
+# Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
 # Install packages
@@ -25,7 +25,7 @@ cd
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
 
-# Setup St terminal
+# Setup suckless terminal
 cd
 git clone https://git.suckless.org/st
 cd st
