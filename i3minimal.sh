@@ -11,19 +11,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Install packages
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed xorg go lxappearance nitrogen picom i3-gaps i3status i3lock dmenu curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch tlp yt-dlp dunst xclip unzip p7zip bluez bluez-utils blueman networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils pavucontrol ranger leafpad ttf-liberation scrot vlc thunar feh alacritty firefox vim polkit-gnome wget
-#sudo pacman -S --noconfirm --needed qbittorrent      
-#sudo pacman -S --noconfirm --needed libvirt
-#sudo pacman -S --noconfirm --needed qemu-full
-#sudo pacman -S --force --needed iptables-nft
-#sudo pacman -S --noconfirm --needed dnsmasq
-#sudo pacman -S --noconfirm --needed virt-manager
-#sudo pacman -S --noconfirm --needed qemu-arch-extra
-#sudo pacman -S --noconfirm --needed ovmf
-#sudo pacman -S --noconfirm --needed vde2
-#sudo pacman -S --noconfirm --needed ebtables
-#sudo pacman -S --noconfirm --needed bridge-utils
-#sudo pacman -S --noconfirm --needed openbsd-netcat
+sudo pacman -S --noconfirm --needed xorg go lxappearance nitrogen picom i3-gaps i3status i3lock dmenu curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch tlp yt-dlp dunst xclip unzip p7zip bluez bluez-utils blueman networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils pavucontrol ranger leafpad ttf-liberation scrot vlc thunar feh alacritty firefox vim polkit-gnome wget qbittorrent libvirt qemu-full iptables-nft dnsmasq virt-manager ovmf vde2 ebtables bridge-utils openbsd-netcat
 
 # Install yay
 
@@ -58,9 +46,9 @@ sudo cp -rv ~/dotfiles/i3/i3status.conf ~/.config/i3status/config
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
 # Enable services
-#sudo systemctl enable bluetooth.service
-#sudo systemctl enable libvirtd.service
+sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
+sudo systemctl enable bluetooth.service
 
 clear
 echo "DONE!"
