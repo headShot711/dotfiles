@@ -32,7 +32,6 @@ sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed tlp
 sudo pacman -S --noconfirm --needed yt-dlp
-sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed dunst
 sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed unzip
@@ -46,7 +45,8 @@ sudo pacman -S --noconfirm --needed dhcpcd
 sudo pacman -S --noconfirm --needed wpa_supplicant
 sudo pacman -S --noconfirm --needed xdg-utils
 sudo pacman -S --noconfirm --needed xdg-user-dirs
-sudo pacman -S --noconfirm --needed alsa-utilssudo pacman -S --noconfirm --needed pavucontrol
+sudo pacman -S --noconfirm --needed alsa-utils
+sudo pacman -S --noconfirm --needed pavucontrol
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed leafpad  
 sudo pacman -S --noconfirm --needed ttf-liberation
@@ -58,18 +58,18 @@ sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed vim 
 sudo pacman -S --noconfirm --needed polkit-gnome
-sudo pacman -S --noconfirm --needed qbittorrent      
-sudo pacman -S --noconfirm --needed libvirt
-sudo pacman -S --noconfirm --needed qemu-full
-sudo pacman -S --force --needed iptables-nft
-sudo pacman -S --noconfirm --needed dnsmasq
-sudo pacman -S --noconfirm --needed virt-manager
-sudo pacman -S --noconfirm --needed qemu-arch-extra
-sudo pacman -S --noconfirm --needed ovmf
-sudo pacman -S --noconfirm --needed vde2
-sudo pacman -S --noconfirm --needed ebtables
-sudo pacman -S --noconfirm --needed bridge-utils
-sudo pacman -S --noconfirm --needed openbsd-netcat
+#sudo pacman -S --noconfirm --needed qbittorrent      
+#sudo pacman -S --noconfirm --needed libvirt
+#sudo pacman -S --noconfirm --needed qemu-full
+#sudo pacman -S --force --needed iptables-nft
+#sudo pacman -S --noconfirm --needed dnsmasq
+#sudo pacman -S --noconfirm --needed virt-manager
+#sudo pacman -S --noconfirm --needed qemu-arch-extra
+#sudo pacman -S --noconfirm --needed ovmf
+#sudo pacman -S --noconfirm --needed vde2
+#sudo pacman -S --noconfirm --needed ebtables
+#sudo pacman -S --noconfirm --needed bridge-utils
+#sudo pacman -S --noconfirm --needed openbsd-netcat
 
 # Install yay
 
@@ -97,7 +97,7 @@ sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
 # Enable services
 #sudo systemctl enable bluetooth.service
-sudo systemctl enable libvirtd.service
+#sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
 
 # Most important command! Get rid of the beep!
