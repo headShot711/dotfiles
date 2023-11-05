@@ -62,10 +62,5 @@ sudo cp -rv ~/dotfiles/walls/* ~/walls/
 #sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
 
-# Most important command! Get rid of the beep!
-sudo -i
-rmmod pcspkr
-echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
-
 clear
 echo "DONE!"
