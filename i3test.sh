@@ -4,7 +4,6 @@ mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/i3
 mkdir -v ~/.config/alacritty
-mkdir -v ~/.config/polybar
 
 #Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
@@ -72,9 +71,6 @@ sudo pacman -S --noconfirm --needed ebtables
 sudo pacman -S --noconfirm --needed bridge-utils
 sudo pacman -S --noconfirm --needed openbsd-netcat
 
-# Install XFCE
-#sudo pacman -S --noconfirm --needed xfce4 xfce4-goodies
-
 # Install yay
 
 cd
@@ -89,14 +85,13 @@ yay -S --noconfirm ly
 
 # Copy config files
 cd
-sudo cp -rv ~/dotfiles/i3/* ~/.config/i3/
+sudo cp -rv ~/dotfiles/i3/config ~/.config/i3/
+sudo cp -rv ~/dotfiles/i3/i3status.conf ~/.config/i3status/config
 sudo cp -rv ~/dotfiles/alacritty/* ~/.config/alacritty/
-sudo cp -rv ~/dotfiles/polybar/* ~/.config/polybar/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
-sudo chmod +x ~/.config/polybar/launch.sh
 
 # Enable services
-sudo systemctl enable bluetooth.service
+#sudo systemctl enable bluetooth.service
 sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
 
@@ -105,5 +100,5 @@ sudo -i
 rmmod pcspkr
 echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
 
-echo "Installation completed. Reboot system"
-printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
+clear
+echo "DONE!"
