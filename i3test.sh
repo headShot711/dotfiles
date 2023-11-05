@@ -47,7 +47,7 @@ sudo make install
 cd
 wget https://github.com/be5invis/Iosevka/releases/download/v27.3.4/super-ttc-iosevka-27.3.4.zip
 unzip super-ttc-iosevka-27.3.4.zip
-mv iosevka.ttc /usr/share/fonts/
+sudo mv iosevka.ttc /usr/share/fonts/
 sudo fc-cache
 rm -f super-ttc-iosevka-27.3.4.zip
 
