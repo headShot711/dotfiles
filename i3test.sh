@@ -3,7 +3,6 @@ cd
 mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/i3
-mkdir -v ~/.config/alacritty
 
 #Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
@@ -19,6 +18,7 @@ sudo pacman -S --noconfirm --needed picom
 sudo pacman -S --noconfirm --needed i3-gaps
 sudo pacman -S --noconfirm --needed i3status
 sudo pacman -S --noconfirm --needed i3lock
+sudo pacman -S --noconfirm --needed dmenu
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm --needed mtools
@@ -83,11 +83,16 @@ cd
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
 
+# Setup St terminal
+cd
+git clone https://git.suckless.org/st
+cd st
+sudo make install
+
 # Copy config files
 cd
 sudo cp -rv ~/dotfiles/i3/config ~/.config/i3/
 sudo cp -rv ~/dotfiles/i3/i3status.conf ~/.config/i3status/config
-sudo cp -rv ~/dotfiles/alacritty/* ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
 # Enable services
