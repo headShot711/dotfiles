@@ -45,9 +45,8 @@ exec --no-startup-id xrandr -s 1920x1080
 exec_always --no-startup-id autotiling -l 2
 
 # Screen brightness controls
-
-bindsym XF86MonBrightnessUp exec --no-startup-id  "xrandr --output DP-0 --brightness 0.7;
-bindsym XF86MonBrightnessDown exec --no-startup-id  "xrandr --output DP-0 --brightness 0.3;
+bindsym XF86MonBrightnessUp exec --no-startup-id  "xrandr --output DP-0 --brightness 0.7; notify-send 'high brightness'"
+bindsym XF86MonBrightnessDown exec --no-startup-id  "xrandr --output DP-0 --brightness 0.3; notify-send 'low brightness'"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
