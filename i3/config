@@ -45,8 +45,11 @@ exec --no-startup-id xrandr -s 1920x1080
 exec_always --no-startup-id autotiling -l 2
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+bindsym XF86MonBrightnessUp exec --no-startup-id  "xrandr --output DP-0 --brightness 0.7;
+bindsym XF86MonBrightnessDown exec --no-startup-id  "xrandr --output DP-0 --brightness 0.3;
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -69,7 +72,10 @@ bindsym $mod+Return exec --no-startup-id st
 bindsym $mod+q kill
 
 # i3lock
-bindsym $mod+l exec --no-startup-id i3lock
+bindsym $mod+l exec --no-startup-id i3lock -b -f -e -c 5A5A5A
+
+# Screenshot
+bindsym --release Print exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png | notify-send "Screenshot taken"
 
 # Application keybindings
 bindsym $mod+w exec --no-startup-id firefox
@@ -210,4 +216,5 @@ bindsym $mod+i mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+	position bottom
 }
