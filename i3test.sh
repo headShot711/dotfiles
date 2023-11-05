@@ -3,6 +3,7 @@ cd
 mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/i3
+mkdir -v ~/.config/i3status
 
 #Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
@@ -91,7 +92,7 @@ sudo make install
 
 # Copy config files
 cd
-sudo cp -rv ~/dotfiles/i3/config ~/.config/i3/
+sudo cp -rv ~/dotfiles/i3/config ~/.config/i3/config
 sudo cp -rv ~/dotfiles/i3/i3status.conf ~/.config/i3status/config
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
