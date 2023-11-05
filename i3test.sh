@@ -90,6 +90,14 @@ git clone https://git.suckless.org/st
 cd st
 sudo make install
 
+# Install font
+cd
+wget https://github.com/be5invis/Iosevka/releases/download/v27.3.4/super-ttc-iosevka-27.3.4.zip
+unzip super-ttc-iosevka-27.3.4.zip
+mv iosevka.ttc /usr/share/fonts/
+sudo fc-cache
+rm -f super-ttc-iosevka-27.3.4.zip
+
 # Copy config files
 cd
 sudo cp -rv ~/dotfiles/i3/config ~/.config/i3/config
