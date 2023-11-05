@@ -11,55 +11,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed xorg  
-sudo pacman -S --noconfirm --needed go
-sudo pacman -S --noconfirm --needed lxappearance
-sudo pacman -S --noconfirm --needed nitrogen
-sudo pacman -S --noconfirm --needed picom
-sudo pacman -S --noconfirm --needed i3-gaps
-sudo pacman -S --noconfirm --needed i3status
-sudo pacman -S --noconfirm --needed i3lock
-sudo pacman -S --noconfirm --needed dmenu
-sudo pacman -S --noconfirm --needed curl
-sudo pacman -S --noconfirm --needed base-devel
-sudo pacman -S --noconfirm --needed mtools
-sudo pacman -S --noconfirm --needed dosfstools
-sudo pacman -S --noconfirm --needed exfat-utils
-sudo pacman -S --noconfirm --needed linux-headers
-sudo pacman -S --noconfirm --needed gvfs
-sudo pacman -S --noconfirm --needed gvfs-mtp
-sudo pacman -S --noconfirm --needed ntfs-3g
-sudo pacman -S --noconfirm --needed htop
-sudo pacman -S --noconfirm --needed neofetch
-sudo pacman -S --noconfirm --needed tlp
-sudo pacman -S --noconfirm --needed yt-dlp
-sudo pacman -S --noconfirm --needed dunst
-sudo pacman -S --noconfirm --needed xclip
-sudo pacman -S --noconfirm --needed unzip
-sudo pacman -S --noconfirm --needed p7zip
-sudo pacman -S --noconfirm --needed bluez
-sudo pacman -S --noconfirm --needed bluez-utils
-sudo pacman -S --noconfirm --needed blueman
-sudo pacman -S --noconfirm --needed networkmanager
-sudo pacman -S --noconfirm --needed network-manager-applet
-sudo pacman -S --noconfirm --needed dhcpcd
-sudo pacman -S --noconfirm --needed wpa_supplicant
-sudo pacman -S --noconfirm --needed xdg-utils
-sudo pacman -S --noconfirm --needed xdg-user-dirs
-sudo pacman -S --noconfirm --needed alsa-utils
-sudo pacman -S --noconfirm --needed pavucontrol
-sudo pacman -S --noconfirm --needed ranger
-sudo pacman -S --noconfirm --needed leafpad  
-sudo pacman -S --noconfirm --needed ttf-liberation
-sudo pacman -S --noconfirm --needed scrot
-sudo pacman -S --noconfirm --needed vlc
-sudo pacman -S --noconfirm --needed thunar 
-sudo pacman -S --noconfirm --needed feh
-sudo pacman -S --noconfirm --needed alacritty
-sudo pacman -S --noconfirm --needed firefox
-sudo pacman -S --noconfirm --needed vim 
-sudo pacman -S --noconfirm --needed polkit-gnome
-sudo pacman -S --noconfirm --needed wget
+sudo pacman -S --noconfirm --needed xorg go lxappearance nitrogen picom i3-gaps i3status i3lock dmenu curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch tlp yt dlp dunst xclip unzip p7zip bluez bluez-utils blueman networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils pavucontrol ranger leafpad ttf-liberation scrot vlc thunar feh alacritty firefox vim polkit-gnome wget
 #sudo pacman -S --noconfirm --needed qbittorrent      
 #sudo pacman -S --noconfirm --needed libvirt
 #sudo pacman -S --noconfirm --needed qemu-full
