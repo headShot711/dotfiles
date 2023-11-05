@@ -59,6 +59,7 @@ sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed vim 
 sudo pacman -S --noconfirm --needed polkit-gnome
+sudo pacman -S --noconfirm --needed wget
 #sudo pacman -S --noconfirm --needed qbittorrent      
 #sudo pacman -S --noconfirm --needed libvirt
 #sudo pacman -S --noconfirm --needed qemu-full
