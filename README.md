@@ -1,8 +1,8 @@
 # Post Arch Installation script #
 
-The script will install i3 window manager on a base arch linux with necessary packages, with my configuration files in place.
+The script will install i3 window manager on a base arch linux with a minimal rice
 
-# Steps:
+Steps:
 
 1) Install git after base arch installation is complete.
 
