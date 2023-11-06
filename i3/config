@@ -75,10 +75,7 @@ bindsym $mod+l exec --no-startup-id i3lock -b -f -e -c 5A5A5A
 bindsym --release Print exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png | notify-send "Screenshot taken"
 
 # Application keybindings
-bindsym $mod+w exec --no-startup-id firefox
-
-# Set shut down, restart and locking features
-
+bindsym $mod+w exec --no-startup-id chromium
 
 # start dmenu (a program launcher)
 bindsym $mod+r exec --no-startup-id dmenu_run
