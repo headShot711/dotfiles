@@ -2,6 +2,7 @@
 cd
 mkdir -v walls
 mkdir -v ~/.config
+mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/i3
 mkdir -v ~/.config/i3status
 
@@ -25,12 +26,6 @@ cd
 yay -S --noconfirm autotiling
 yay -S --noconfirm ly
 
-# Setup suckless terminal
-cd
-git clone https://git.suckless.org/st
-cd st
-sudo make install
-
 # Install font
 cd
 wget https://github.com/be5invis/Iosevka/releases/download/v27.3.4/super-ttc-iosevka-27.3.4.zip
@@ -41,6 +36,7 @@ rm -f super-ttc-iosevka-27.3.4.zip
 
 # Copy config files
 cd
+sudo cp -rv ~/dotfiles/i3/alacritty.yml ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/i3/config ~/.config/i3/config
 sudo cp -rv ~/dotfiles/i3/i3status.conf ~/.config/i3status/config
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
