@@ -216,6 +216,10 @@ bindsym $mod+i mode "resize"
 #	position bottom
 #}
 
+#######################
+## Gruvbox color scheme
+#######################
+
 set $bg #282828
 set $red #cc241d
 set $green #98971a
