@@ -12,7 +12,7 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Install packages
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm --needed xorg go lxappearance nitrogen picom i3-wm i3status i3lock dmenu curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch tlp yt-dlp dunst xclip unzip p7zip bluez bluez-utils blueman networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils pavucontrol ranger leafpad ttf-liberation scrot vlc thunar feh alacritty firefox chromium vim polkit-gnome wget qbittorrent
+sudo pacman -S --noconfirm --needed xorg go lxappearance nitrogen picom i3-wm i3status i3lock dmenu curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch tlp yt-dlp dunst xclip unzip p7zip bluez bluez-utils blueman networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils pavucontrol ranger leafpad ttf-liberation scrot vlc thunar feh alacritty firefox chromium vim polkit-gnome wget qbittorrent exa
 
 #libvirt qemu-full iptables-nft dnsmasq virt-manager ovmf vde2 ebtables bridge-utils openbsd-netcat
 
@@ -35,6 +35,10 @@ unzip super-ttc-iosevka-27.3.4.zip
 sudo mv iosevka.ttc /usr/share/fonts/
 sudo fc-cache
 rm -f super-ttc-iosevka-27.3.4.zip
+
+# Set bash alias
+cd
+echo "alias ls='exa -lah'" >> .bashrc
 
 # Copy config files
 cd
