@@ -18,3 +18,5 @@ mkdir -v walls
 mkdir -v ~/.config/openbox
 sudo cp -rv ~/dotfiles/openbox/autostart ~/.config/openbox/autostart
 
+cd
+cp /etc/xdg/openbox/rc.xml ~/.config/openbox
