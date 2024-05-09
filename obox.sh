@@ -12,3 +12,9 @@ echo "alias ls='exa -lah'" >> .bashrc
 
 # Enable services
 sudo systemctl enable lightdm
+
+cd
+mkdir -v walls
+mkdir -v ~/.config/openbox
+sudo cp -rv ~/dotfiles/openbox/autostart ~/.config/openbox/autostart
+
