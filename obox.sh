@@ -12,6 +12,3 @@ echo "alias ls='exa -lah'" >> .bashrc
 
 # Enable services
 sudo systemctl enable lightdm
-
-clear
-echo "DONE!"
