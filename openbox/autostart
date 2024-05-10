@@ -1,5 +1,7 @@
 xrandr -s 1920x1080 &
 plank &
 tint2 &
+dunst &
 nitrogen --restore &
 volumeicon &
+nm-applet &
