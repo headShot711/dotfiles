@@ -22,7 +22,6 @@ git clone https://git.suckless.org/st
 cd st
 sudo make clean install
 
-
 # Install yay
 cd
 git clone https://aur.archlinux.org/yay.git
