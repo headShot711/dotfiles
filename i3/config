@@ -42,6 +42,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id blueman-applet
 exec --no-startup-id xrandr -s 1920x1080
+exec --no-startup-id dunst &
 exec_always --no-startup-id autotiling -l 2
 
 # Screen brightness controls
