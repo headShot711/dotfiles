@@ -52,5 +52,13 @@ root@archiso
 umount -a
 reboot
 
+nmtui - Wifi connect GUI
+mkdir /etc/systemd/journald.conf.d
+vim /etc/systemd/journald.conf.d/usbstick.conf
+[
+[Journal]
+Storage=volatile
+RuntimeMaxUse=30M
+]
 
 
