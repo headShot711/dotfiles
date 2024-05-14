@@ -1,1 +1,6 @@
+iwctl adapter phy0 set-property Powered on
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect "Infinix HOT 10S"
+
 
