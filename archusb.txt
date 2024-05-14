@@ -2,5 +2,55 @@ iwctl adapter phy0 set-property Powered on
 station wlan0 scan
 station wlan0 get-networks
 station wlan0 connect "Infinix HOT 10S"
+pacman -Syy reflector
+reflector -c India -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Syy
+lsblk
+gdisk /dev/sdc
+200M - EFI Partition - code - ef00
+Remaining space - default settings
+w
+lsblk
+mkfs.fat -F32 /dev/sdc1
+mkfs.ext4 -O "^has_journal" /dev/sdc2
+mount /dev/sdc2 /mnt
+mkdir -p /mnt/boot/efi
+mount/ /dev/sdc1 /mnt/boot/efi
+lsblk
+pacstrap /mnt base linux linux-firmware vim
+genfstab -U /mnt >> /mnt/etc/fstab
+cat /mnt/etc/fstab
+arch-chroot /mnt
+timedatectl list-timezones | grep Kolkata
+ln -sf /usr/share/zoneinfo/Asia/Calcutta /etc/localtime
+hwclock --systohc
+vim /etc/locale-gen (uncomment en_US.UTF-8 UTF-8)
+locale-gen
+vim /etc/locale.conf
+[LANG=en_US.UTF-8] (without brackets)
+vim /etc/hostname
+[archusb]
+vim /etc/hosts
+[
+127.0.0.1    localhost
+::1          localhost
+127.0.1.1    archusb.localdomain  archusb
+]
+passwd (Set root password)
+pacman -S grub efibootmgr networkmanager network-manager-applet mtools dosfstools reflector git base-devel linux-headers bluez bluez-utils xdg-utils xdg-user-dirs
+vim /etc/mkinitcpio.conf (under HOOKS move 'block' and 'keyboard' before autodetect entry)
+mkinitcpio -p linux
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable --recheck
+grub-mkconfig -o /boot/grub/grub.cfg
+systemctl enable NetworkManager
+systemctl enable bluetooth
+useradd -mG wheel hs
+passwd hs (password for user account)
+visudo (uncomment %wheel)
+exit
+root@archiso
+umount -a
+reboot
+
 
 
