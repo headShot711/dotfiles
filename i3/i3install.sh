@@ -48,7 +48,6 @@ sudo cp -rv ~/dotfiles/i3/i3status.conf ~/.config/i3status/config
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 
 # Enable services
-sudo systemctl enable libvirtd.service
 sudo systemctl enable ly.service
 sudo systemctl enable bluetooth.service
 
