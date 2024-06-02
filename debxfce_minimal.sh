@@ -45,7 +45,7 @@ sudo apt install -y bluez blueman
 sudo systemctl enable bluetooth
 
 # tools
-sudo apt install -y geany l3afpad scrot evince transmission-gtk unzip
+sudo apt install -y geany l3afpad scrot evince transmission-gtk unzip neofetch htop
 sudo apt install -y vim neofetch htop mpv vlc qimgv galculator redshift timeshift
 
 # Install Lightdm Console Display Manager
