@@ -21,7 +21,7 @@ sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 sudo apt install -y thunar
 
 # Terminal (eg. terminator,kitty,xcfe4-terminal)
-sudo apt install -y xcfe4-terminal
+sudo apt install -y terminator
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
