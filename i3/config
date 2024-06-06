@@ -39,12 +39,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # Autostart
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startip-id picom &
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id blueman-applet
 exec --no-startup-id xrandr -s 1920x1080
 exec --no-startup-id dunst &
 exec_always --no-startup-id autotiling -l 2
+exec_always --no-startup-id picom &
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id  "xrandr --output DP-0 --brightness 0.7; notify-send 'high brightness'"
