@@ -14,8 +14,6 @@ sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm --needed xorg go lxappearance nitrogen cmus picom cronie i3-wm i3status i3lock kate dmenu curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch tlp yt-dlp dunst xclip unzip p7zip bluez bluez-utils blueman networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils pavucontrol ranger leafpad ttf-liberation scrot vlc thunar feh alacritty firefox vim polkit-gnome wget qbittorrent exa
 
-#libvirt qemu-full iptables-nft dnsmasq virt-manager ovmf vde2 ebtables bridge-utils openbsd-netcat
-
 # Install yay
 
 cd
