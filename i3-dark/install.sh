@@ -49,10 +49,5 @@ sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo systemctl enable ly.service
 sudo systemctl enable bluetooth.service
 
-# Get rid of the beep!
-sudo -i
-rmmod pcspkr
-echo "blacklist pcspkr" >/etc/modprobe.d/nobeep.conf
-
 clear
 echo "DONE!"
