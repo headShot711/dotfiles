@@ -257,5 +257,9 @@ hide_edge_borders smart
 # No gaps when there is only 1 client window
 smart_gaps on
 
+# Remove titlebar for windows
+default_border pixel 0
+
+# Enable gaps
 gaps inner 6
 gaps outer 6
