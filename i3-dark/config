@@ -232,7 +232,7 @@ bar {
   status_command i3status
 }
 
-bindsym $mod+r exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#770303' -sf '#FFFFFF' -fn 'monospace-10' -p 'dmenu prompt'
+bindsym $mod+r exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#770303' -sf '#FFFFFF' -fn 'Iosevka-10' -p 'dmenu prompt'
 
 
 # Shutdown options
@@ -250,3 +250,12 @@ mode "$mode_system" {
 }
 
 bindsym $mod+y mode "$mode_system"
+
+# No borders when there is only 1 client window
+hide_edge_borders smart
+
+# No gaps when there is only 1 client window
+smart_gaps on
+
+gaps inner 6
+gaps outer 6
