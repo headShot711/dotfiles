@@ -232,7 +232,7 @@ bar {
   status_command i3status
 }
 
-bindsym $mod+r exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#770303' -sf '#FFFFFF' -fn 'monospace-10' -p 'dmenu prompt'
+bindsym $mod+r exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#770303' -sf '#FFFFFF' -fn 'monospace-10' -p 'dmenu prompt'
 
 
 # Shutdown options
