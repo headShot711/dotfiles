@@ -72,7 +72,7 @@ bindsym $mod+q kill
 bindsym $mod+l exec --no-startup-id i3lock -b -f -e -c 222222
 
 # Screenshot
-bindsym --release Print exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png | notify-send "Screenshot taken"
+bindsym --release Print exec --no-startup-id scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png | notify-send "Screenshot taken"
 
 # Application keybindings
 bindsym $mod+w exec --no-startup-id firefox
