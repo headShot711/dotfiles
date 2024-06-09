@@ -69,7 +69,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+q kill
 
 # i3lock
-bindsym $mod+l exec --no-startup-id i3lock -b -f -e -c 5A5A5A
+bindsym $mod+l exec --no-startup-id i3lock -b -f -e -c 222222
 
 # Screenshot
 bindsym --release Print exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png | notify-send "Screenshot taken"
