@@ -6,6 +6,7 @@ mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/i3
 mkdir -v ~/.config/i3status
 mkdir -v ~/.config/i3blocks
+touch ~/.vimrc
 
 # Add parallel downloading
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
@@ -51,6 +52,7 @@ sudo cp -rv ~/dotfiles/i3-dark/config ~/.config/i3/config
 sudo cp -rv ~/dotfiles/i3-dark/i3status.conf ~/.config/i3status/config
 sudo cp -rv ~/dotfiles/i3-dark/i3blocks/config ~/.config/i3blocks/config
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
+sudo cp -rv ~/dotfiles/i3-dark/vimrc ~/.vimrc
 
 # Enable services
 sudo systemctl enable ly.service
