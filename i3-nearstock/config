@@ -187,6 +187,7 @@ mode "resize" {
 # finds out, if available)
 bar {
         status_command i3status
+		position bottom
 }
 
 # i3lock
@@ -205,6 +206,7 @@ exec_always --no-startup-id autotiling -l 2
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xrandr -s 1920x1080
 exec --no-startup-id dunst &
+exec --no-startup-id volumeicon
 
 # Shutdown options
 
@@ -228,9 +230,17 @@ bindsym $mod+r exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '
 # Enable auto back and forth
 workspace_auto_back_and_forth yes
 
-# Set brightness
-bindsym XF86MonBrightnessUp  exec --no-startup-id brightnessctl set +10000
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10000-
+# Brightness
+#bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+#bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
+
+# Sreen brightness controls
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+# Screen brightness controls
+# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Set wallpaper
 exec_always --no-startup-id feh --bg-scale /home/hs/walls/wallhaven-856dlk.png
@@ -239,4 +249,36 @@ exec_always --no-startup-id feh --bg-scale /home/hs/walls/wallhaven-856dlk.png
 #bindsym Ctrl+F7 exec brightness_hdmi down
 #bindsym Ctrl+F8 exec brightness_hdmi up
 
+# Red color outline scheme
+#client.focused #D3262E #000000 #FFFFFF #AAAAAA #D3262E
+#client.focused_inactive #333333 #222222 #FFFFFF #484e50 #222222
+#client.unfocused        #333333 #000000 #888888 #292d2e #222222
+
+#--------------------------------------------------------------------------#
+# Dracula Theme
+
+# class                 border  bground text    indicator child_border
+#client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+#client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+#client.unfocused        #44475A #44475A #F8F8F2 #44475A   #44475A
+#client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+#client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+#client.background       #F8F8F2
+
+#bar {
+#  colors {
+#    background #282A36
+#    statusline #F8F8F2
+#    separator  #44475A
+
+#    focused_workspace  #44475A #44475A #F8F8F2
+#    active_workspace   #282A36 #44475A #F8F8F2
+#    inactive_workspace #282A36 #282A36 #BFBFBF
+#    urgent_workspace   #FF5555 #FF5555 #F8F8F2
+#    binding_mode       #FF5555 #FF5555 #F8F8F2
+#  }
+#}
+#bindsym $mod+r exec "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#875fd7' -sf '#F8F8F2' -fn 'Iosevka-8' -p 'dmenu%'"
+#--------------------------------------------------------------------------#
 
