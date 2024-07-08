@@ -156,7 +156,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Noto Sans Bold',
+    font='Iosevka',
     fontsize=14,
     padding=3,
 )
@@ -193,14 +193,14 @@ screens = [
                 
                 # Custom TextBox widget for 'Vol' (Volume) text display
                 widget.TextBox(
-                    font="Noto Sans Bold",
+                    font="Iosevka",
                     text="Vol:",
                     padding = 2,
                     fontsize=13
                 ),
 
                 # Volume widget
-                widget.Volume(font="Noto Sans Bold",padding = 4,),
+                widget.Volume(font="Iosevka",padding = 4,),
 
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
