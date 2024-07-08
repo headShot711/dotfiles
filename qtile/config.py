@@ -37,8 +37,8 @@ from libqtile.utils import guess_terminal
 mod = "mod4"
 terminal = guess_terminal()
 
-browser = "brave"
-fileManager = "thunar"
+browser = "firefox"
+fileManager = "dolphin"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
