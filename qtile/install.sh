@@ -14,7 +14,7 @@ touch ~/.vimrc
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-apps lxappearance jq keepassxc acpi wget unzip brightnessctl volumeicon flameshot timeshift pavucontrol nitrogen picom curl base-devel linux-headers vim htop vlc mpv neofetch xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot dolphin feh alacritty firefox polkit-gnome exa qtile python-psutil lightdm lightdm-gtk-greeter bluez bluez-utils blueman yt-dlp qtile
+sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-apps lxappearance jq keepassxc acpi wget tree mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g gwenview unzip brightnessctl volumeicon flameshot timeshift pavucontrol nitrogen picom curl base-devel linux-headers vim htop vlc mpv neofetch xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-extra scrot dolphin feh alacritty firefox polkit-gnome exa qtile python-psutil lightdm lightdm-gtk-greeter bluez bluez-utils blueman yt-dlp qtile
 
 # Install yay
 cd
@@ -29,6 +29,19 @@ unzip super-ttc-iosevka-27.3.4.zip
 sudo mv iosevka.ttc /usr/share/fonts/
 sudo fc-cache
 rm -f super-ttc-iosevka-27.3.4.zip
+
+#Setup virt-manager in Arch Linux:
+#sudo pacman -S libvirt qemu-full iptables-nft dnsmasq virt-manager ovmf vde2 ebtables bridge-utils openbsd-netcat qemu-guest-agent libguestfs
+
+#sudo usermod -a -G libvirt $(whoami)
+#newgrp libvirt
+
+#sudo systemctl start libvirtd
+#sudo systemctl enable libvirtd
+
+#sudo virsh net-start default
+#sudo virsh net-autostart default
+
 
 # Copy config files
 cd
