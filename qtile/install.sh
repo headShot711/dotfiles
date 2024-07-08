@@ -6,16 +6,21 @@ mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/qtile
 mkdir -v ~/.config/alacritty
+touch ~/.vimrc
 
-#Add parallel downloading
-sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+#Enable parallel downloading and color
+#sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
 sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-apps lxappearance jq keepassxc acpi wget unzip brightnessctl volumeicon flameshot timeshift pavucontrol nitrogen picom curl base-devel linux-headers vim htop vlc mpv neofetch xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome scrot dolphin feh alacritty firefox polkit-gnome exa qtile python-psutil lightdm lightdm-gtk-greeter bluez bluez-utils blueman yt-dlp qtile
 
-#xorg go lxappearance nitrogen cmus noto-fonts noto-fonts-emoji noto-fonts-extra picom evince jq pavucontrol keepassxc dmidecode acpi qtile brightnessctl volumeicon flameshot timeshift dmenu curl base-devel mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g htop neofetch tlp yt-dlp dunst xclip unzip p7zip bluez bluez-utils blueman networkmanager network-manager-applet dhcpcd wpa_supplicant xdg-utils xdg-user-dirs alsa-utils pavucontrol ranger leafpad ttf-liberation scrot vlc mpv pcmanfm feh alacritty firefox vim polkit-gnome wget qbittorrent eza lightdm lightdm-gtk-greeter
+# Install yay
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 # Install font
 cd
@@ -32,6 +37,8 @@ sudo cp -rv ~/dotfiles/qtile/autostart.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/alacritty.yml ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
+sudo cp -rv ~/dotfiles/i3-dark/vimrc ~/.vimrc
+
 cd .config/qtile
 sudo chmod +x autostart.sh
 cd
