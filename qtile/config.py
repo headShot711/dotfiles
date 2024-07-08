@@ -87,8 +87,8 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
-    Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
-    Key([mod], "t", lazy.spawn(fileManager), desc="Launch file manager"),
+    Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
+    Key([mod], "e", lazy.spawn(fileManager), desc="Launch file manager"),
 
     # Audio key controls
         Key([], "XF86AudioRaiseVolume", lazy.spawn(
