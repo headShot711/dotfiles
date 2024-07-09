@@ -47,10 +47,11 @@ rm -f super-ttc-iosevka-27.3.4.zip
 
 # Copy config files
 cd
-sudo cp -rv ~/dotfiles/qtile/kitty/* ~/.config/kitty/
 sudo cp -rv ~/dotfiles/qtile/config.py ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/autostart.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/alacritty.yml ~/.config/alacritty/
+sudo cp -rv ~/dotfiles/qtile/kitty/* ~/.config/kitty/
+sudo cp -rv ~/dotfiles/qtile/rofi/config.rasi ~/.config/rofi/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
 sudo cp -rv ~/dotfiles/qtile/.vimrc ~/.vimrc
