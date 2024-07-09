@@ -87,17 +87,18 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
-    # browser
+    # Browser
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
 
-    # terminal
+    # Terminal
     Key([mod], "e", lazy.spawn(fileManager), desc="Launch file manager"),
 
-    # menu
-    Key([mod], "m", lazy.spawn("rofi -show drun")),
+    # Rofi Integration
+    Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Launch an application."),
+    Key([mod], "Tab", lazy.spawn("rofi -show window"), desc="Switch between windows."),
 
-    # screenshot
-    Key([mod], "s", lazy.spawn("flameshot")),
+    # Screenshot
+    # Key([mod], "s", lazy.spawn("flameshot")),
 
     # Audio key controls
         Key([], "XF86AudioRaiseVolume", lazy.spawn(
