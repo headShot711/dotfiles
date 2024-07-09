@@ -97,9 +97,12 @@ keys = [
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Launch an application."),
     Key([mod], "Tab", lazy.spawn("rofi -show window"), desc="Switch between windows."),
 
-    # Screenshot
-    # Key([mod], "s", lazy.spawn("flameshot")),
+    # Lockscreen
+    Key([mod], "l", lazy.spawn("betterlockscreen -l"), desc="Launch the lockscreen."),
 
+    # Poweroff Menu
+    Key([mod], "p", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh")), desc="Launch the power menu."),
+    
     # Audio key controls
         Key([], "XF86AudioRaiseVolume", lazy.spawn(
             "pactl set-sink-volume @DEFAULT_SINK@ +5%")),
@@ -110,9 +113,9 @@ keys = [
 
     # Brightness controls
         Key([], "XF86MonBrightnessUp", lazy.spawn(
-            "brillo -A 10")),
+            "brightnessctl set +10%")),
         Key([], "XF86MonBrightnessDown", lazy.spawn(
-            "brillo -U 10")),
+            "brightnessctl set 10%-")),
 
 ]
 
