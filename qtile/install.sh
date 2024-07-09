@@ -52,7 +52,7 @@ sudo cp -rv ~/dotfiles/qtile/autostart.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/alacritty.yml ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
-sudo cp -rv ~/dotfiles/i3-dark/vimrc ~/.vimrc
+sudo cp -rv ~/dotfiles/qtile/.vimrc ~/.vimrc
 
 cd .config/qtile
 sudo chmod +x autostart.sh
