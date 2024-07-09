@@ -2,14 +2,14 @@
 
 # Make directories
 cd
+touch ~/.vimrc
 mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/qtile
 mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/kitty
 mkdir -v ~/.config/rofi
-touch ~/.vimrc
-#sudo mkdir -v /etc/sddm.conf.d
+sudo mkdir -v /etc/sddm.conf.d/
 
 #Enable parallel downloading and color
 #sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
@@ -50,7 +50,6 @@ rm -f super-ttc-iosevka-27.3.4.zip
 #sudo virsh net-start default
 #sudo virsh net-autostart default
 
-
 # Copy config files
 cd
 sudo cp -rv ~/dotfiles/qtile/config.py ~/.config/qtile/
@@ -63,6 +62,9 @@ sudo cp -rv ~/dotfiles/qtile/rofi/config.rasi ~/.config/rofi/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
 sudo cp -rv ~/dotfiles/qtile/.vimrc ~/.vimrc
+
+# Apply SDDM theme
+sudo cp -rv ~/dotfiles/qtile/sddm/theme.conf /etc/sddm.conf.d/
 
 cd .config/qtile
 sudo chmod +x autostart.sh
