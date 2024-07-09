@@ -6,6 +6,7 @@ mkdir -v walls
 mkdir -v ~/.config
 mkdir -v ~/.config/qtile
 mkdir -v ~/.config/alacritty
+mkdir -v ~/.config/kitty
 touch ~/.vimrc
 
 #Enable parallel downloading and color
@@ -45,6 +46,7 @@ rm -f super-ttc-iosevka-27.3.4.zip
 
 # Copy config files
 cd
+sudo cp -rv ~/dotfiles/qtile/kitty/* ~/.config/kitty/
 sudo cp -rv ~/dotfiles/qtile/config.py ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/autostart.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/alacritty.yml ~/.config/alacritty/
