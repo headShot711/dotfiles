@@ -14,7 +14,7 @@ touch ~/.vimrc
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-apps lxappearance jq keepassxc acpi wget tree mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g gwenview unzip brightnessctl volumeicon flameshot timeshift pavucontrol nitrogen picom curl base-devel linux-headers vim htop vlc mpv neofetch xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-extra scrot dolphin feh alacritty firefox polkit-gnome exa qtile python-psutil lightdm lightdm-gtk-greeter bluez bluez-utils blueman yt-dlp qtile
+sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-apps lxappearance jq keepassxc acpi wget kitty kate tree mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g gwenview unzip brightnessctl volumeicon flameshot timeshift pavucontrol nitrogen picom curl base-devel linux-headers vim htop vlc mpv neofetch xclip networkmanager network-manager-applet alsa-utils ranger leafpad ttf-liberation ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-extra scrot dolphin feh alacritty firefox polkit-gnome exa qtile python-psutil lightdm lightdm-gtk-greeter bluez bluez-utils blueman yt-dlp qtile
 
 # Install yay
 cd
