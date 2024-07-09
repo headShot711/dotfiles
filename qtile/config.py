@@ -35,7 +35,7 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
 mod = "mod4"
-terminal = guess_terminal()
+terminal = "kitty"
 
 browser = "firefox"
 fileManager = "dolphin"
@@ -87,8 +87,17 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
+    # browser
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
+
+    # terminal
     Key([mod], "e", lazy.spawn(fileManager), desc="Launch file manager"),
+
+    # menu
+    Key([mod], "m", lazy.spawn("rofi -show drun")),
+
+    # screenshot
+    Key([mod], "s", lazy.spawn("flameshot")),
 
     # Audio key controls
         Key([], "XF86AudioRaiseVolume", lazy.spawn(
