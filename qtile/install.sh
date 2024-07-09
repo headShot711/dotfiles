@@ -8,8 +8,8 @@ mkdir -v ~/.config/qtile
 mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/kitty
 mkdir -v ~/.config/rofi
-mkdir -v /etc/sddm.conf.d
 touch ~/.vimrc
+sudo mkdir -v /etc/sddm.conf.d
 
 #Enable parallel downloading and color
 #sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
