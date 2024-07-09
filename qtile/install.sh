@@ -70,7 +70,7 @@ sudo chmod +x power_menu.sh
 cd
 
 # Enable services
-sudo systemctl enable lightdm.service
+sudo systemctl enable sddm.service
 sudo systemctl enable bluetooth.service
 #sudo systemctl enable libvirtd.service
 
