@@ -29,7 +29,7 @@ sudo pacman -S --noconfirm xorg-server xorg-xinit xorg-xrandr xorg-apps lxappear
 cd
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Monofur.zip
 unzip Monofur.zip
-sudo mv /Monofur/*.ttf /usr/share/fonts/
+sudo mv ~/Monofur/*.ttf /usr/share/fonts/
 sudo fc-cache
 rm -f Monofur.zip
 
