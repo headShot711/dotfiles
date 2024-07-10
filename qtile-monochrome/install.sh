@@ -9,9 +9,6 @@ mkdir -v ~/.config/qtile
 mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/rofi
 
-#Enable parallel downloading and color
-#sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-
 # Install yay
 cd
 git clone https://aur.archlinux.org/yay.git
