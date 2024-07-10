@@ -36,6 +36,7 @@ sudo cp -rv ~/dotfiles/qtile-monochrome/config.rasi ~/.config/rofi/
 sudo cp -rv ~/dotfiles/qtile-monochrome/*.jpg ~/walls/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.bashrc ~/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.vimrc ~/.vimrc
+sudo cp -rv ~/dotfiles/qtile-monochrome/.xinitrc ~/.xinitrc
 
 cd .config/qtile
 sudo chmod +x power_menu.sh
