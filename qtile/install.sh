@@ -58,7 +58,7 @@ sudo cp -rv ~/dotfiles/qtile/power_menu.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile/alacritty.yml ~/.config/alacritty/
 sudo cp -rv ~/dotfiles/qtile/kitty/* ~/.config/kitty/
 sudo cp -rv ~/dotfiles/qtile/rofi/config.rasi ~/.config/rofi/
-#sudo cp -rv ~/dotfiles/sddm/theme.conf /etc/sddm.conf.d/
+sudo cp -rv ~/dotfiles/sddm/theme.conf /etc/sddm.conf.d/
 sudo cp -rv ~/dotfiles/walls/* ~/walls/
 sudo cp -rv ~/dotfiles/qtile/.bashrc ~/
 sudo cp -rv ~/dotfiles/qtile/.vimrc ~/.vimrc
