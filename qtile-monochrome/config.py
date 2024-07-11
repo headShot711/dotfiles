@@ -179,7 +179,7 @@ screens = [
 			distro = "Arch",
 			execute='alacritty -e /usr/bin/pacman -Syu',
 			foreground='#8be9fd',
-			no_update_string = 'None',
+			no_update_string = 'No Updates',
 			padding = 4,
 			update_interval='60'
 		), 
