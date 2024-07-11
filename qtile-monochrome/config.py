@@ -170,7 +170,20 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+                
+		 widget.CheckUpdates (
+			background='#6272a4',
+			colour_have_updates='ffffff',
+			colour_no_updates='ffffff',
+			display_format='Updates: {updates}',
+			distro = "Arch",
+			execute='alacritty -e /usr/bin/pacman -Syu',
+			foreground='#8be9fd',
+			no_update_string = 'None',
+			padding = 4,
+			update_interval='60'
+		), 
+
                 widget.Clock(format="%a %I:%M %p"),
                 widget.Systray(),
             ],
