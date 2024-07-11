@@ -8,6 +8,7 @@ mkdir -v ~/.config
 mkdir -v ~/.config/qtile
 mkdir -v ~/.config/alacritty
 mkdir -v ~/.config/rofi
+mkdir -v ~/.config/dunst
 
 # Install yay
 cd
@@ -44,6 +45,7 @@ sudo cp -rv ~/dotfiles/qtile-monochrome/*.jpg ~/walls/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.bashrc ~/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.vimrc ~/.vimrc
 sudo cp -rv ~/dotfiles/qtile-monochrome/.xinitrc ~/.xinitrc
+sudo cp -rv ~/dotfiles/qtile-monochrome/dunstrc ~/.config/dunst/
 
 cd .config/qtile
 sudo chmod +x power_menu.sh
