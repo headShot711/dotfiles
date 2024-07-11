@@ -159,7 +159,10 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.GroupBox(),
+                widget.GroupBox(
+				highlight_color = "#C0C0C0",
+				highlight_method = "line",
+				),
                 widget.WindowName(),
                 widget.Chord(
                     chords_colors={
