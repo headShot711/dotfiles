@@ -54,6 +54,7 @@ xdg-user-dirs-update
 
 # Enable services
 sudo systemctl enable bluetooth.service
+sudo systemctl enable tlp.service
 
 clear
 echo "DONE!"
