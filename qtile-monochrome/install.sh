@@ -23,7 +23,7 @@ yay -S betterlockscreen ly pfetch
 # Packages to install from Arch Linux official repos
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S --noconfirm xorg lxappearance dmidecode calcurse xfce4-settings dhcpcd wpa_supplicant git man ttf-monofur-nerd ttf-hack pacman-contrib jq keepassxc cmus xdg-utils xdg-user-dirs arc-gtk-theme breeze-gtk materia-gtk-theme papirus-icon-theme dunst dmenu acpi tlp wget qt5-graphicaleffects qt5-svg qt5-quickcontrols2 kde-cli-tools rofi mousepad tree mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g unzip brightnessctl volumeicon flameshot timeshift pavucontrol nitrogen picom curl base-devel linux-headers nano vim htop btop vlc mpv neofetch xclip networkmanager network-manager-applet alsa-utils fff leafpad ttf-liberation ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-extra scrot dolphin feh alacritty firefox polkit-gnome eza qtile python-psutil bluez bluez-utils blueman yt-dlp
+sudo pacman -S --noconfirm xorg lxappearance dmidecode calcurse xfce4-settings dhcpcd wpa_supplicant git man ttf-monofur-nerd ttf-hack pacman-contrib jq keepassxc cmus xdg-utils xdg-user-dirs arc-gtk-theme breeze-gtk materia-gtk-theme papirus-icon-theme dunst dmenu acpi tlp wget rofi mousepad tree mtools dosfstools exfat-utils linux-headers gvfs gvfs-mtp ntfs-3g unzip brightnessctl volumeicon flameshot timeshift pavucontrol nitrogen picom curl base-devel linux-headers nano vim htop btop vlc mpv neofetch xclip networkmanager network-manager-applet alsa-utils fff leafpad ttf-liberation ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-extra scrot feh alacritty firefox polkit-gnome eza qtile python-psutil bluez bluez-utils blueman yt-dlp
 
 # Install font from source
 #cd
