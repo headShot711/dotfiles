@@ -21,3 +21,4 @@ alias lt='eza -aT --color=always --group-directories-first' # tree listing
 
 # Custom aliases
 alias xx="exit"
+alias cc="clear"
