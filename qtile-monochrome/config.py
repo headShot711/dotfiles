@@ -41,7 +41,9 @@ keys = [
     Key([mod], "l", lazy.spawn("betterlockscreen -l"), desc="Launch the lockscreen."),
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
     Key([mod], "e", lazy.spawn("alacritty -e fff"), desc="Launch text file manager"),
-    Key([mod], "p", lazy.spawn("alacritty -e cmus"), desc="Launch text music player"),
+    Key([mod], "m", lazy.spawn("alacritty -e cmus"), desc="Launch text music player"),
+    Key([mod], "c", lazy.spawn("alacritty -e calcurse"), desc="Open Calendar"),
+    Key([mod], "p", lazy.spawn("keepassxc"), desc="Open Password manager"),
 
     # Poweroff Menu
     Key([mod], "y", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh")), desc="Launch the power menu."),
