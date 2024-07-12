@@ -18,7 +18,7 @@ makepkg -si
 
 # Install yay packages
 cd
-yay -S betterlockscreen
+yay -S betterlockscreen ly
 
 # Packages to install from Arch Linux official repos
 
@@ -53,6 +53,7 @@ xdg-user-dirs-update
 # Enable services
 sudo systemctl enable bluetooth.service
 sudo systemctl enable tlp.service
+sudo systemctl enable ly.service
 
 clear
 echo "DONE!"
