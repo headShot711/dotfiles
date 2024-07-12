@@ -172,9 +172,9 @@ screens = [
                 ),
                 
 		 widget.CheckUpdates (
-			background='#6272a4',
-			colour_have_updates='ffffff',
-			colour_no_updates='ffffff',
+			background='#5c5d63',
+			colour_have_updates='#d979fc',
+			colour_no_updates='#38f23b',
 			display_format='Updates: {updates}',
 			distro = "Arch",
 			execute='alacritty -e /usr/bin/pacman -Syu',
@@ -182,7 +182,7 @@ screens = [
 			no_update_string = 'No Updates',
 			padding = 4,
 			update_interval='60'
-		), 
+		),
 
                 widget.Clock(format="%a %I:%M %p"),
                 widget.Systray(),
