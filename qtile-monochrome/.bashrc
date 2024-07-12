@@ -9,6 +9,10 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
+# HISTFILESIZE = number of commands to keep in .bash_history. Setting to -1 disables the limit.
+HISTSIZE=1000
+HISTFILESIZE=50000
+
 # Changing "ls" to "eza"
 alias ls='eza -al --color=always --group-directories-first' # my preferred listing
 alias la='eza -a --color=always --group-directories-first'  # all files and dirs
