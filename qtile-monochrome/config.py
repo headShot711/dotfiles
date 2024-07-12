@@ -149,6 +149,9 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
+# █▄▄ ▄▀█ █▀█
+# █▄█ █▀█ █▀▄
+
 screens = [
     Screen(
         top=bar.Bar(
