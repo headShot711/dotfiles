@@ -48,23 +48,21 @@ keys = [
     Key([mod], "c", lazy.spawn("alacritty -e calcurse"), desc="Open Calendar"),
     Key([mod], "p", lazy.spawn("keepassxc"), desc="Open Password manager"),
 
-    # Poweroff Menu
+    # POWEROFF MENU
     Key([mod], "y", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh")), desc="Launch the power menu."),
+
+    # AUDIO
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume 0 +5%"), desc='Volume Up'),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume 0 -5%"), desc='volume down'),
+    Key([], "XF86AudioMute", lazy.spawn("pulsemixer --toggle-mute"), desc='Volume Mute'),
+
+    # BRIGHTNESS
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl s 10%+"), desc='brightness UP'),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl s 10%-"), desc='brightness Down'),
+
+    # DMENU
+    Key([mod], "r", lazy.spawn("dmenu_run -nf '#D3D3D3' -nb '#222222' -sb '#36454F' -sf '#D3D3D3' -fn 'Monofur Nerd Font Mono'-10"), desc="Spawn a command using a prompt widget"),
     
-    # Audio key controls
-    Key([], "XF86AudioRaiseVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ +5%")),
-    Key([], "XF86AudioLowerVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ -5%")),
-    Key([], "XF86AudioMute", lazy.spawn(
-        "pactl set-sink-mute @DEFAULT_SINK@ toggle")),
-
-    # Brightness controls
-    Key([], "XF86MonBrightnessUp", lazy.spawn(
-        "brightnessctl set +10%")),
-    Key([], "XF86MonBrightnessDown", lazy.spawn(
-        "brightnessctl set 10%-")),
-
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -88,7 +86,6 @@ keys = [
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawn("dmenu_run -nf '#D3D3D3' -nb '#222222' -sb '#36454F' -sf '#D3D3D3' -fn 'Monofur Nerd Font Mono'-10"), desc="Spawn a command using a prompt widget"),
 ]
 
 # █▀▀ █▀█ █▀█ █░█ █▀█ █▀
