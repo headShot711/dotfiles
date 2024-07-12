@@ -151,7 +151,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="Monofur Nerd Font Mono",
+    font="Monofur Nerd Font Mono Bold",
     fontsize=16,
     padding=3,
 )
@@ -172,8 +172,23 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                
-		 widget.CheckUpdates (
+
+		# Network Information               
+		#widget.TextBox(font="Monofur Nerd Font Mono Bold", text=" ", foreground="#44c419", padding=0, fontsize=30),
+                #widget.TextBox(font="Monofur Nerd Font Mono Bold", text="", foreground="#44c419", padding=0, fontsize=30),
+                #widget.Net(interface=None, format='{down} ↓↑ {up}'), # None = it will show traffic on all interfaces combined
+		
+		# CPU Freq
+		#widget.TextBox(font="Monofur Nerd Font Mono Bold", text="", foreground='#cd1f3f', padding=0, fontsize=32),
+                #widget.CPUGraph(border_color='#c0c5ce',  fill_color='#6790eb', graph_color='#6790eb', border_width=1, line_width=1, core="all", type="box"),
+                #widget.Sep(linewidth=0, padding=5),
+		
+		# Thermal Sensor
+		#widget.TextBox(font="Monofur Nerd Font Mono Bold", text="", foreground="#bc5a03", padding=0, fontsize=20),
+                #widget.ThermalSensor(foreground_alert="#cd1f3f", metric=True, padding=3, threshold=80),
+                #widget.Sep(padding=10),
+		    
+		widget.CheckUpdates (
 			background='#5c5d63',
 			colour_have_updates='#d979fc',
 			colour_no_updates='#38f23b',
@@ -242,4 +257,4 @@ wl_xcursor_size = 24
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
-wmname = "LG3D"
+wmname = "Qtile"
