@@ -18,7 +18,7 @@ makepkg -si
 
 # Install yay packages
 cd
-yay -S betterlockscreen ly pfetch
+yay -S betterlockscreen ly
 
 # Packages to install from Arch Linux official repos
 
