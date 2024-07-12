@@ -20,6 +20,6 @@ alias ll='eza -l --color=always --group-directories-first'  # long format
 alias lt='eza -aT --color=always --group-directories-first' # tree listing
 
 # Custom aliases
+alias qconf="vim ~/.config/qtile/config.py"
 alias xx="exit"
 alias cc="clear"
-alias qconf="vim ~/.config/qtile/config.py"
