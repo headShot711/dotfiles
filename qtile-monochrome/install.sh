@@ -40,7 +40,7 @@ sudo cp -rv ~/dotfiles/qtile-monochrome/config.py ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile-monochrome/autostart.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile-monochrome/power_menu.sh ~/.config/qtile/
 sudo cp -rv ~/dotfiles/qtile-monochrome/alacritty.yml alacritty.toml ~/.config/alacritty/
-sudo cp -rv ~/dotfiles/qtile-monochrome/config.rasi ~/.config/rofi/
+sudo cp -rv ~/dotfiles/qtile-monochrome/rofi/* ~/.config/rofi/
 sudo cp -rv ~/dotfiles/qtile-monochrome/*.jpg ~/walls/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.bashrc ~/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.vimrc ~/.vimrc
