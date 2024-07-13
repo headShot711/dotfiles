@@ -44,7 +44,7 @@ sudo cp -rv ~/dotfiles/qtile-monochrome/rofi/* ~/.config/rofi/
 sudo cp -rv ~/dotfiles/qtile-monochrome/*.jpg ~/walls/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.bashrc ~/
 sudo cp -rv ~/dotfiles/qtile-monochrome/.vimrc ~/.vimrc
-sudo cp -rv ~/dotfiles/qtile-monochrome/dunstrc ~/.config/dunst/
+sudo cp -rv ~/dotfiles/qtile-monochrome/dunst/dunstrc ~/.config/dunst/
 sudo cp -rv ~/dotfiles/qtile-monochrome/ranger/rc.conf ~/.config/ranger/
 
 cd .config/qtile
