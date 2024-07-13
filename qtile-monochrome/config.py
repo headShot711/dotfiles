@@ -86,6 +86,11 @@ keys = [
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+
+    # Dunst Shortuts
+    Key(["control"], "space",  lazy.spawn("dunstctl close")), # Clear Last Notification
+    Key(["control", "shift"], "space",  lazy.spawn("dunstctl close-all")), # Clear All Notifications
+    Key(["control", "shift"], "n",  lazy.spawn("dunstctl  history-pop")), # Show Notificaction history
 ]
 
 # █▀▀ █▀█ █▀█ █░█ █▀█ █▀
